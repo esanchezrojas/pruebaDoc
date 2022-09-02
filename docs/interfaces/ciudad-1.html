@@ -1,0 +1,1294 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>wplay-intranet documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">wplay-intranet documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li
+  >
+  ciudad</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/empleados/components/empleado-lista/empleado-lista.component.ts</code>
+        </p>
+
+
+
+
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#ciudad_id" 
+>
+                                            ciudad_id
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#descripcion" 
+>
+                                            descripcion
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="ciudad_id"></a>
+                                        <span class="name "><b>ciudad_id</b>
+                                            <a href="#ciudad_id">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>ciudad_id:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="descripcion"></a>
+                                        <span class="name "><b>descripcion</b>
+                                            <a href="#descripcion">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>descripcion:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {AfterViewInit, ChangeDetectorRef, Component, OnInit} from &#x27;@angular/core&#x27;;
+import {ResponseModel} from &#x27;@core/models/response-model/ResponseModel&#x27;;
+import {Observable} from &#x27;rxjs&#x27;;
+import {State} from &#x27;@core/models/store-model/StoreModel&#x27;;
+import {FormArray, FormBuilder, FormGroup, Validators} from &#x27;@angular/forms&#x27;;
+import {AuthService} from &#x27;@core/services/auth/auth.service&#x27;;
+import {select, Store} from &#x27;@ngrx/store&#x27;;
+import {MenuService} from &#x27;@core/services/menu/menu.service&#x27;;
+import {UtilService} from &#x27;@core/services/util/util.service&#x27;;
+import {Router} from &#x27;@angular/router&#x27;;
+import Swal from &#x27;sweetalert2&#x27;;
+import * as fromRoot from &#x27;../../../rootScopeAction&#x27;;
+import {EmpleadosService} from &#x27;@core/services/empleados/empleados.service&#x27;;
+import {ConfirmationService, LazyLoadEvent, MessageService} from &#x27;primeng&#x27;;
+
+interface EmpleadoLista {
+  empleado_id: number;
+  cedula: string;
+  tipo_doc: string;
+  fecha_exp: string;
+  lugar_exp: number;
+  primer_nombre: string;
+  segundo_nombre: string;
+  primer_apellido: string;
+  segundo_apellido: string;
+  genero_id: number;
+  rh_id: number;
+  fecha_nacim: string;
+  eps_id: number;
+  arl_id: number;
+  afc_id: number;
+  afp_id: number;
+  ccf_id: number;
+  cargo_id: number;
+  area_id: number;
+  dependencia_id: number;
+  sede_id: number;
+  razonsocial_id: number;
+  tipocontrato_id: number;
+  estadocivil_id: number;
+  fecha_contrato: string;
+  fecha_perprueba: string;
+  fecha_retiro: string;
+  horario_id: number;
+  usotiempo_id: number;
+  raza_id: number;
+  nivelestudio_id: number;
+  carrera: string;
+  semestre: string;
+  direccion: string;
+  barrio: string;
+  celular: string;
+  tel_fijo: string;
+  email_corporativo: string;
+  ciudad_id: number;
+  tallacamisa_id: number;
+  tallapantalon_id: number;
+  tallazapatos_id: number;
+  nombre_contacto: string;
+  tel_contacto: string;
+  parentesco_id: number;
+  num_personas_hogar: number;
+  num_personas_cargo: number;
+  num_hijos: number;
+  estrato: number;
+  tipovivienda_id: number;
+  participsalud_id: number;
+  fecha_examed: string;
+  fecha_prox_examed: string;
+  entidad_examed: string;
+  tipoexamed_id: number;
+  peso: string;
+  estatura: string;
+  practica_deporte: string;
+  fuma: string;
+  bebalcohol_id: number;
+  visiometria: string;
+  audiometria: string;
+  concepto_medico: string;
+  observ: string;
+  remision_eps: string;
+  banco_id: number;
+  tipocuenta_id: number;
+  num_cuenta: string;
+  jefe_id: number;
+  es_jefe: string;
+  estudia_actual: string;
+  nivelestudioactual_id: number;
+  carrera_actual: string;
+  actualiza_primera_vez: string;
+}
+
+interface ciudad {
+  ciudad_id: number;
+  descripcion: string;
+}
+
+@Component({
+  selector: &#x27;app-empleado-lista&#x27;,
+  templateUrl: &#x27;./empleado-lista.component.html&#x27;,
+  styleUrls: [&#x27;./empleado-lista.component.scss&#x27;],
+  providers: [MessageService, ConfirmationService]
+})
+export class EmpleadoListaComponent implements OnInit, AfterViewInit {
+
+  constructor(private messageService: MessageService,
+              private confirmationService: ConfirmationService,
+              private authService: AuthService,
+              private store: Store&lt;{ rootScope: State }&gt;,
+              private menuService: MenuService,
+              private utilService: UtilService,
+              private empleadoService: EmpleadosService,
+              private cd: ChangeDetectorRef,
+              private router: Router,
+              private fb: FormBuilder) {
+    this.dato$ &#x3D; store.pipe(select(&#x27;rootScope&#x27;));
+    this.logged &#x3D; JSON.parse(localStorage.getItem(&#x27;logged&#x27;));
+  }
+
+  get hijos(): FormArray {
+    return this.hijop.get(&#x27;hijos&#x27;) as FormArray;
+  }
+
+  response: ResponseModel &#x3D; {
+    dataArray: [],
+    msg: &#x27;&#x27;, state: 0
+  };
+  record &#x3D; 0;
+  recordExtra &#x3D; 0;
+  cedula_id: any;
+  display &#x3D; false;
+  displayConf &#x3D; false;
+  displayExtraDate &#x3D; false;
+  rowGroupMetadata: any;
+  pageSize &#x3D; 100;
+  pageNumber &#x3D; 1;
+  sort: string;
+  order: any;
+  loading: boolean;
+  empledoLista: EmpleadoLista;
+  empleadosLista: EmpleadoLista[] &#x3D; [];
+  logged: Observable&lt;boolean&gt;;
+  submitted: boolean;
+  addMenuDialog &#x3D; false;
+  editMenuDialog &#x3D; false;
+  editEmpleadoModal &#x3D; false;
+  editActualiza &#x3D; false;
+  empleadoEdit &#x3D; 0;
+  menuSelect &#x3D; [];
+  submenuSelect &#x3D; [];
+  dato$: Observable&lt;State&gt;;
+  filterListaEmpleados &#x3D; this.fb.group({
+    cedula_e: &#x27;&#x27;,
+    estado_e: &#x27;&#x27;,
+    actualiza_primera_e: &#x27;&#x27;
+  });
+  subMenuForm &#x3D; this.fb.group({
+    submenu_id: null,
+    menu_id: [&#x27;&#x27;, Validators.required],
+    descripcion: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(90)])],
+    pagina: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(90)])],
+  });
+  passSalario &#x3D; this.fb.group({
+    n_contrasena: [&#x27;&#x27;, Validators.compose([
+        Validators.required,
+        Validators.pattern(new RegExp(&#x27;^(?&#x3D;.*[a-z])(?&#x3D;.*[A-Z])(?&#x3D;.*[0-9])(?&#x3D;.*[!@#\$%\^&amp;\*{}\.-])(?&#x3D;.{10,50})&#x27;))
+      ]
+    )],
+    c_contrasena: [&#x27;&#x27;, Validators.compose([
+        Validators.required,
+        Validators.pattern(new RegExp(&#x27;^(?&#x3D;.*[a-z])(?&#x3D;.*[A-Z])(?&#x3D;.*[0-9])(?&#x3D;.*[!@#\$%\^&amp;\*{}\.-])(?&#x3D;.{10,50})&#x27;))
+      ]
+    )],
+    metodo: [&#x27;guardarConfiguracion&#x27;]
+  });
+  salarioForm &#x3D; this.fb.group({
+    salario: [&#x27;&#x27;, Validators.compose([Validators.required])]
+  });
+
+  estudiosLista &#x3D; [];
+  hijosLista &#x3D; [];
+  vehiculosLista &#x3D; [];
+  MascotasLista &#x3D; [];
+
+  fecha_exp_edit &#x3D; new Date();
+  fecha_contrato_edit &#x3D; new Date();
+  fecha_perprueba_edit &#x3D; new Date();
+  fecha_retiro_edit &#x3D; new Date();
+  fecha_examed_edit &#x3D; new Date();
+  fecha_prox_examed_edit &#x3D; new Date();
+  fecha_nacim_edit &#x3D; new Date();
+
+  resultsCity: ciudad[] &#x3D; [];
+  ciudad_id: any;
+  ciudadExpId: any;
+
+  ccEmpleado &#x3D; &#x27;&#x27;;
+  nameModalSalario &#x3D; &#x27;&#x27;;
+  nameSalario &#x3D; &#x27;&#x27;;
+  checkModalSalario &#x3D; false;
+  modalSalario &#x3D; false;
+  empSalarySelect &#x3D; &#x27;0&#x27;;
+  typeChange &#x3D; &#x27;&#x27;;
+
+  selectGenero &#x3D; [];
+  selectRH &#x3D; [];
+  selectTiempoL &#x3D; [];
+  selectRaza &#x3D; [];
+  selectECivil &#x3D; [];
+  selectTallaCamisa &#x3D; [];
+  selectTallaPantalon &#x3D; [];
+  selectTallaZapato &#x3D; [];
+  selectTipoVivi &#x3D; [];
+  selectParSalud &#x3D; [];
+  selectTipoExa &#x3D; [];
+  selectAlcohol &#x3D; [];
+  selectBanco &#x3D; [];
+  selectTipoCu &#x3D; [];
+  selectParen &#x3D; [];
+  selectEPS &#x3D; [];
+  selectARL &#x3D; [];
+  selectAFC &#x3D; [];
+  selectAFP &#x3D; [];
+  selectCCF &#x3D; [];
+  selectArea &#x3D; [];
+  selectDepen &#x3D; [];
+  selectSede &#x3D; [];
+  selectRazon &#x3D; [];
+  selectTipoCon &#x3D; [];
+  selectHorario &#x3D; [];
+  selectEstudio &#x3D; [];
+  selectCargo &#x3D; [];
+  selectCiudad &#x3D; [];
+  selectJefe &#x3D; [];
+  hijop &#x3D; this.fb.group({
+    cedula_h: [&#x27;&#x27;],
+    hijos: this.fb.array([])
+  });
+  EmpleadoEdit &#x3D; this.fb.group({
+    cedula: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(11), Validators.minLength(6)])],
+    tipo_doc: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    fecha_exp: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    lugar_exp: [&#x27;&#x27;, Validators.compose( [Validators.required])],
+    p_nombre: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(25)])],
+    s_nombre: [&#x27;&#x27;, Validators.compose([Validators.maxLength(25)])],
+    p_apellido: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(25)])],
+    s_apellido: [&#x27;&#x27;, Validators.compose([Validators.maxLength(25)])],
+    genero_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    rh_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    fecha_nacim: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    eps_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    arl_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    afc_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    afp_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    ccf_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    cargo: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(100)])],
+    area_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    dependencia_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    sede_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    razonsocial_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    tipocontrato_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    estadocivil_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    fecha_contrato: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    fecha_perprueba: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    fecha_retiro: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    horario_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    usotiempo_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    raza_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    direccion: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(50)])],
+    barrio: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(50)])],
+    celular: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(10)])],
+    tel_fijo: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(10)])],
+    email_corporativo: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(200), Validators.email])],
+    ciudad_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    tallacamisa_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    tallapantalon_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    tallazapatos_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    nombre_contacto: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(200)])],
+    tel_contacto: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(10)])],
+    parentesco_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    num_personas_hogar: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    num_personas_cargo: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    num_hijos: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    estrato: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    tipovivienda_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    participsalud_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    fecha_examed: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    fecha_prox_examed: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    entidad_examed: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(50)])],
+    tipoexamed_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    peso: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    estatura: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    practica_deporte: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    fuma: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    bebalcohol_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    visiometria: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(30)])],
+    audiometria: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(30)])],
+    concepto_medico: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    observ: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    remision_eps: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    banco_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    tipocuenta_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    num_cuenta: [&#x27;&#x27;, Validators.compose([Validators.required, Validators.maxLength(50)])],
+    jefe_id: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    es_jefe: [&#x27;&#x27;, Validators.compose([Validators.required])],
+    empleado_id: [&#x27;&#x27;]
+  });
+
+  getClasificadorByType(): void {
+    this.loading &#x3D; true;
+    this.empleadoService.getClasificadorByType(&#x27;GEN&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectGenero &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;RH&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectRH &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;UTLI&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectTiempoL &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;RAZA&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectRaza &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;ECIV&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectECivil &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;TCAM&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectTallaCamisa &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;TPAN&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectTallaPantalon &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;TZAP&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectTallaZapato &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;TVIV&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectTipoVivi &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;PASA&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectParSalud &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;TEXM&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectTipoExa &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;CBAL&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectAlcohol &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;BANC&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectBanco &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;TCUB&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectTipoCu &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;PARE&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectParen &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;EPS&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectEPS &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;ARL&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectARL &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;AFC&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectAFC &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;AFP&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectAFP &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;CCF&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectCCF &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;AREA&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectArea &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;DEPE&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectDepen &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;SEDE&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectSede &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;RSOC&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectRazon &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;TCON&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectTipoCon &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;HTRA&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectHorario &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getClasificadorByType(&#x27;NEST&#x27;).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectEstudio &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getCargo().subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectCargo &#x3D; data.dataArray;
+      }
+    });
+    this.empleadoService.getJefe().subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectJefe &#x3D; data.dataArray;
+      }
+    });
+  }
+
+  getActualCity(id): void {
+    this.empleadoService.getCiudadActual(id).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.ciudad_id &#x3D; data.dataObjet;
+      }
+    });
+  }
+
+  getActualExpCity(id): void {
+    this.empleadoService.getCiudadActual(id).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.ciudadExpId &#x3D; data.dataObjet;
+      }
+    });
+  }
+
+  searchCity(event): void {
+    this.empleadoService.getCiudad(event.query).subscribe(data &#x3D;&gt; {
+      this.resultsCity &#x3D; data.dataArray;
+    });
+  }
+
+  openEditEmpleado(data: EmpleadoLista): any {
+
+    this.fecha_exp_edit &#x3D; new Date(data.fecha_exp + &#x27;T05:00:00Z&#x27;);
+    this.fecha_contrato_edit &#x3D; new Date(data.fecha_contrato  + &#x27;T05:00:00Z&#x27;);
+    this.fecha_perprueba_edit &#x3D; new Date(data.fecha_perprueba  + &#x27;T05:00:00Z&#x27;);
+    this.fecha_retiro_edit &#x3D; new Date(data.fecha_retiro  + &#x27;T05:00:00Z&#x27;);
+    this.fecha_examed_edit &#x3D; new Date(data.fecha_examed  + &#x27;T05:00:00Z&#x27;);
+    this.fecha_prox_examed_edit &#x3D; new Date(data.fecha_prox_examed  + &#x27;T05:00:00Z&#x27;);
+    this.fecha_nacim_edit &#x3D; new Date(data.fecha_nacim  + &#x27;T05:00:00Z&#x27;);
+
+    if (data.actualiza_primera_vez &#x3D;&#x3D;&#x3D; &#x27;Pendiente por RRHH&#x27;) {
+      this.editActualiza &#x3D; true;
+    }
+
+    this.getActualCity(data.ciudad_id);
+    this.getActualExpCity(data.lugar_exp);
+    this.empleadoEdit &#x3D; data.empleado_id;
+    this.cedula_id &#x3D; data.cedula;
+    this.editEmpleadoModal &#x3D; true;
+    this.EmpleadoEdit.controls.empleado_id.setValue(data.empleado_id);
+    this.EmpleadoEdit.controls.cedula.setValue(data.cedula);
+    this.EmpleadoEdit.controls.tipo_doc.setValue(data.tipo_doc);
+    this.EmpleadoEdit.controls.lugar_exp.setValue(data.lugar_exp);
+    this.EmpleadoEdit.controls.p_nombre.setValue(data.primer_nombre);
+    this.EmpleadoEdit.controls.s_nombre.setValue(data.segundo_nombre);
+    this.EmpleadoEdit.controls.p_apellido.setValue(data.primer_apellido);
+    this.EmpleadoEdit.controls.s_apellido.setValue(data.segundo_apellido);
+    this.EmpleadoEdit.controls.genero_id.setValue(data.genero_id);
+    this.EmpleadoEdit.controls.rh_id.setValue(data.rh_id);
+    this.EmpleadoEdit.controls.eps_id.setValue(data.eps_id);
+    this.EmpleadoEdit.controls.arl_id.setValue(data.arl_id);
+    this.EmpleadoEdit.controls.afc_id.setValue(data.afc_id);
+    this.EmpleadoEdit.controls.afp_id.setValue(data.afp_id);
+    this.EmpleadoEdit.controls.ccf_id.setValue(data.ccf_id);
+    this.EmpleadoEdit.controls.cargo.setValue(data.cargo_id);
+    this.EmpleadoEdit.controls.area_id.setValue(data.area_id);
+    this.EmpleadoEdit.controls.dependencia_id.setValue(data.dependencia_id);
+    this.EmpleadoEdit.controls.sede_id.setValue(data.sede_id);
+    this.EmpleadoEdit.controls.razonsocial_id.setValue(data.razonsocial_id);
+    this.EmpleadoEdit.controls.estadocivil_id.setValue(data.estadocivil_id);
+    this.EmpleadoEdit.controls.tipocontrato_id.setValue(data.tipocontrato_id);
+    this.EmpleadoEdit.controls.usotiempo_id.setValue(data.usotiempo_id);
+    this.EmpleadoEdit.controls.horario_id.setValue(data.horario_id);
+    this.EmpleadoEdit.controls.raza_id.setValue(data.raza_id);
+    this.EmpleadoEdit.controls.direccion.setValue(data.direccion);
+    this.EmpleadoEdit.controls.barrio.setValue(data.barrio);
+    this.EmpleadoEdit.controls.celular.setValue(data.celular);
+    this.EmpleadoEdit.controls.tel_fijo.setValue(data.tel_fijo);
+    this.EmpleadoEdit.controls.email_corporativo.setValue(data.email_corporativo);
+    this.EmpleadoEdit.controls.ciudad_id.setValue(data.ciudad_id);
+    this.EmpleadoEdit.controls.tallacamisa_id.setValue(data.tallacamisa_id);
+    this.EmpleadoEdit.controls.tallapantalon_id.setValue(data.tallapantalon_id);
+    this.EmpleadoEdit.controls.tallazapatos_id.setValue(data.tallazapatos_id);
+    this.EmpleadoEdit.controls.nombre_contacto.setValue(data.nombre_contacto);
+    this.EmpleadoEdit.controls.tel_contacto.setValue(data.tel_contacto);
+    this.EmpleadoEdit.controls.parentesco_id.setValue(data.parentesco_id);
+    this.EmpleadoEdit.controls.num_personas_hogar.setValue(data.num_personas_hogar);
+    this.EmpleadoEdit.controls.num_personas_cargo.setValue(data.num_personas_cargo);
+    this.EmpleadoEdit.controls.num_hijos.setValue(data.num_hijos);
+    this.EmpleadoEdit.controls.estrato.setValue(data.estrato);
+    this.EmpleadoEdit.controls.tipovivienda_id.setValue(data.tipovivienda_id);
+    this.EmpleadoEdit.controls.participsalud_id.setValue(data.participsalud_id);
+    this.EmpleadoEdit.controls.entidad_examed.setValue(data.entidad_examed);
+    this.EmpleadoEdit.controls.tipoexamed_id.setValue(data.tipoexamed_id);
+    this.EmpleadoEdit.controls.peso.setValue(data.peso);
+    this.EmpleadoEdit.controls.estatura.setValue(data.estatura);
+    this.EmpleadoEdit.controls.practica_deporte.setValue(data.practica_deporte);
+    this.EmpleadoEdit.controls.fuma.setValue(data.fuma);
+    this.EmpleadoEdit.controls.bebalcohol_id.setValue(data.bebalcohol_id);
+    this.EmpleadoEdit.controls.visiometria.setValue(data.visiometria);
+    this.EmpleadoEdit.controls.audiometria.setValue(data.audiometria);
+    this.EmpleadoEdit.controls.concepto_medico.setValue(data.concepto_medico);
+    this.EmpleadoEdit.controls.observ.setValue(data.observ);
+    this.EmpleadoEdit.controls.remision_eps.setValue(data.remision_eps);
+    this.EmpleadoEdit.controls.banco_id.setValue(data.banco_id);
+    this.EmpleadoEdit.controls.tipocuenta_id.setValue(data.tipocuenta_id);
+    this.EmpleadoEdit.controls.num_cuenta.setValue(data.num_cuenta);
+    this.EmpleadoEdit.controls.jefe_id.setValue(data.jefe_id);
+    this.EmpleadoEdit.controls.es_jefe.setValue(data.es_jefe);
+  }
+
+
+  filterInput(): void {
+    this.getData();
+  }
+
+  getCiudad(): void {
+    const id &#x3D; this.EmpleadoEdit.controls.depto_id.value;
+    this.empleadoService.getCiudad(id).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectCiudad &#x3D; data.dataArray;
+      }
+    });
+  }
+
+  ngOnInit(): void {
+    this.loading &#x3D; false;
+    this.getClasificadorByType();
+  }
+
+  ngAfterViewInit(): void {
+    this.cd.detectChanges();
+  }
+
+  getData(): void {
+    const dataObj: object &#x3D; {
+      limit: this.pageSize,
+      page: this.pageNumber,
+      sort: this.sort,
+      filter: this.filterListaEmpleados.value,
+      order: this.order
+    };
+    this.loading &#x3D; true;
+    this.empleadoService.listaEmpleado(dataObj).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+
+
+        console.log(this.empleadosLista);
+        this.empleadosLista &#x3D; [...data.dataArray];
+
+        this.record &#x3D; data.dataObjet.records;
+        console.log(this.empleadosLista);
+        console.log([...data.dataArray]);
+        console.log(this.record);
+      } else if (data.state &#x3D;&#x3D;&#x3D; 402) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          if (this.logged) {
+            this.authService.logout().subscribe(datalog &#x3D;&gt; {
+              this.response &#x3D; datalog;
+              if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+                localStorage.removeItem(&#x27;logged&#x27;);
+                this.store.dispatch(new fromRoot.CleanRootScope());
+                window.location.href &#x3D; &#x27;/login&#x27;;
+              } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+                this.router.navigate([&#x27;/error&#x27;]);
+              }
+            }, error &#x3D;&gt; {
+              this.router.navigate([&#x27;/error&#x27;]);
+            });
+          }
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 401) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 500) {
+        this.router.navigate([&#x27;/error&#x27;]);
+      } else {
+        this.messageService.add({severity: &#x27;error&#x27;, summary: &#x27;Advertencia&#x27;, detail: data.msg, life: 3000});
+      }
+    }, error &#x3D;&gt; {
+      this.router.navigate([&#x27;/error&#x27;]);
+    });
+  }
+
+  editaEmpleado(): void {
+    this.loading &#x3D; true;
+    this.empleadoService.editaEmpleado(this.EmpleadoEdit.value).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      this.response &#x3D; data;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.messageService.add({severity: &#x27;success&#x27;, summary: &#x27;Exito&#x27;, detail: data.msg, life: 3000});
+        setTimeout(function() {
+            window.location.reload();
+          }, 4000
+        );
+      } else if (data.state &#x3D;&#x3D;&#x3D; 402) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          if (this.logged) {
+            this.authService.logout().subscribe(datalog &#x3D;&gt; {
+              this.response &#x3D; datalog;
+              if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+                localStorage.removeItem(&#x27;logged&#x27;);
+                this.store.dispatch(new fromRoot.CleanRootScope());
+                window.location.href &#x3D; &#x27;/login&#x27;;
+              } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+                this.router.navigate([&#x27;/error&#x27;]);
+              }
+            }, error &#x3D;&gt; {
+              this.router.navigate([&#x27;/error&#x27;]);
+            });
+          }
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 401) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 500) {
+        this.router.navigate([&#x27;/error&#x27;]);
+      } else {
+        this.messageService.add({severity: &#x27;error&#x27;, summary: &#x27;Advertencia&#x27;, detail: data.msg, life: 3000});
+      }
+    }, error &#x3D;&gt; {
+      // this.router.navigate([&#x27;/error&#x27;]);
+    });
+  }
+
+  showDialoghijos(): any {
+    this.display &#x3D; true;
+  }
+
+  onSort(): void {
+
+  }
+
+  newhijo(): FormGroup {
+    return this.fb.group({
+      name: &#x27;&#x27;,
+      birth: &#x27;&#x27;,
+    });
+  }
+
+  sortData(e: LazyLoadEvent): void {
+    this.sort &#x3D; e.sortField;
+    this.order &#x3D; e.sortOrder;
+    const num &#x3D; 100;
+    let i &#x3D; 0;
+    while (i &lt; num) {
+      if (e.rows * i &#x3D;&#x3D;&#x3D; e.first) {
+        this.pageNumber &#x3D; i + 1;
+      }
+      i++;
+    }
+    this.pageSize &#x3D; e.rows;
+    this.getData();
+  }
+
+  exportExcel(): void {
+    this.utilService.exportExcel(this.empleadosLista, &#x27;Lista empleados&#x27;);
+  }
+
+  hideDialog(): any {
+    this.addMenuDialog &#x3D; false;
+    this.editMenuDialog &#x3D; false;
+    this.editEmpleadoModal &#x3D; false;
+  }
+
+  editActualizaPrimera(id: number, estado: number): any {
+    this.loading &#x3D; true;
+    this.empleadoService.editActualizaPrimera(id, estado).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      this.response &#x3D; data;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.messageService.add({severity: &#x27;success&#x27;, summary: &#x27;Exito&#x27;, detail: data.msg, life: 3000});
+        this.getData();
+        setTimeout(function() {
+            window.location.reload();
+          }, 4000
+        );
+      } else if (data.state &#x3D;&#x3D;&#x3D; 402) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          if (this.logged) {
+            this.authService.logout().subscribe(datalog &#x3D;&gt; {
+              this.response &#x3D; datalog;
+              if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+                localStorage.removeItem(&#x27;logged&#x27;);
+                this.store.dispatch(new fromRoot.CleanRootScope());
+                window.location.href &#x3D; &#x27;/login&#x27;;
+              } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+                this.router.navigate([&#x27;/error&#x27;]);
+              }
+            }, error &#x3D;&gt; {
+              this.router.navigate([&#x27;/error&#x27;]);
+            });
+          }
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 401) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 500) {
+        this.router.navigate([&#x27;/error&#x27;]);
+      } else {
+        this.messageService.add({severity: &#x27;error&#x27;, summary: &#x27;Advertencia&#x27;, detail: data.msg, life: 3000});
+      }
+    }, error &#x3D;&gt; {
+      this.router.navigate([&#x27;/error&#x27;]);
+    });
+  }
+
+  newProcesoActData(): void {
+    this.empleadoService.newProcesoActData().subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      this.response &#x3D; data;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.messageService.add({severity: &#x27;success&#x27;, summary: &#x27;Exito&#x27;, detail: data.msg, life: 3000});
+        this.getData();
+        setTimeout(function() {
+            window.location.reload();
+          }, 4000
+        );
+      } else if (data.state &#x3D;&#x3D;&#x3D; 402) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          if (this.logged) {
+            this.authService.logout().subscribe(datalog &#x3D;&gt; {
+              this.response &#x3D; datalog;
+              if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+                localStorage.removeItem(&#x27;logged&#x27;);
+                this.store.dispatch(new fromRoot.CleanRootScope());
+                window.location.href &#x3D; &#x27;/login&#x27;;
+              } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+                this.router.navigate([&#x27;/error&#x27;]);
+              }
+            }, error &#x3D;&gt; {
+              this.router.navigate([&#x27;/error&#x27;]);
+            });
+          }
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 401) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 500) {
+        this.router.navigate([&#x27;/error&#x27;]);
+      } else {
+        this.messageService.add({severity: &#x27;error&#x27;, summary: &#x27;Advertencia&#x27;, detail: data.msg, life: 3000});
+      }
+    }, error &#x3D;&gt; {
+      this.router.navigate([&#x27;/error&#x27;]);
+    });
+  }
+
+  openEditSalario(empleadoId, cc): void {
+    this.empSalarySelect &#x3D; empleadoId;
+    this.ccEmpleado &#x3D; cc;
+    this.empleadoService.openEditSalario(empleadoId).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      this.response &#x3D; data;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        if (data.msg &#x3D;&#x3D;&#x3D; &#x27;1&#x27;) {
+          console.log(data);
+          this.modalSalario &#x3D; true;
+          this.typeChange &#x3D; &#x27;edit&#x27;;
+          this.nameSalario &#x3D; &#x27;Cambiar el salario del empleado con CC: &#x27; + cc;
+          this.salarioForm.controls.salario.setValue(data.dataArray.salario);
+        } else if (data.msg &#x3D;&#x3D;&#x3D; &#x27;0&#x27;) {
+          console.log(data);
+          this.checkModalSalario &#x3D; true;
+          this.nameModalSalario &#x3D; &#x27;Cambiar salario&#x27;;
+        } else if (data.msg &#x3D;&#x3D;&#x3D; &#x27;3&#x27;) {
+          console.log(data);
+          this.modalSalario &#x3D; true;
+          this.nameSalario &#x3D; &#x27;Ingresa el salario del emplado con CC: &#x27; + cc;
+          this.typeChange &#x3D; &#x27;create&#x27;;
+        }
+      }
+    });
+  }
+
+  insertSalario(): void {
+    const salary &#x3D; this.salarioForm.controls.salario.value;
+    this.empleadoService.insertSalario(this.empSalarySelect, salary).subscribe(data &#x3D;&gt; {
+      if (data.state &#x3D;&#x3D;&#x3D; 300) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: &#x27;Cierra sesión e ingresa nuevamente, para intertarlo de nuevo. Si el problema persiste, hable con el admin&#x27;,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        Swal.fire({
+          icon: &#x27;success&#x27;,
+          title: &#x27;&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: &#x27;Se guardo correctamente&#x27;,
+        }).then(() &#x3D;&gt; {
+          this.modalSalario &#x3D; false;
+          this.nameSalario &#x3D; &#x27;&#x27;;
+          this.salarioForm.reset();
+        });
+      }
+    });
+  }
+
+  updateSalario(): void {
+    const salary &#x3D; this.salarioForm.controls.salario.value;
+    this.empleadoService.updateSalario(this.empSalarySelect, salary).subscribe(data &#x3D;&gt; {
+      if (data.state &#x3D;&#x3D;&#x3D; 300) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: &#x27;Cierra sesión e ingresa nuevamente, para intertarlo de nuevo. Si el problema persiste, hable con el admin&#x27;,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        Swal.fire({
+          icon: &#x27;success&#x27;,
+          title: &#x27;&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: &#x27;Se guardo correctamente&#x27;,
+        }).then(() &#x3D;&gt; {
+          this.modalSalario &#x3D; false;
+          this.nameSalario &#x3D; &#x27;&#x27;;
+          this.salarioForm.reset();
+        });
+      }
+    });
+  }
+
+  savePass(): void {
+    const pass &#x3D; this.passSalario.controls.n_contrasena.value;
+    this.empleadoService.setNewPasswordSalary(pass).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      this.response &#x3D; data;
+      this.openEditSalario(this.empSalarySelect, this.ccEmpleado);
+    });
+  }
+
+  getExtraEmpleadoData(empleadoId): void {
+    const dataObj: object &#x3D; {
+      limit: this.pageSize,
+      page: this.pageNumber,
+      sort: this.sort,
+      filter: &#x27;&#x27;,
+      order: this.order,
+      empleado: empleadoId
+    };
+    this.displayExtraDate &#x3D; true;
+    this.loading &#x3D; true;
+    this.empleadoService.getExtraEmpleadoData(dataObj).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        console.log([...data.dataArray]);
+        this.estudiosLista &#x3D; [...data.dataArray[2]];
+        this.hijosLista &#x3D; [...data.dataArray[1]];
+        this.vehiculosLista &#x3D; [...data.dataArray[3]];
+        this.MascotasLista &#x3D; [...data.dataArray[0]];
+        this.recordExtra &#x3D; data.dataObjet.records;
+      } else if (data.state &#x3D;&#x3D;&#x3D; 402) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          if (this.logged) {
+            this.authService.logout().subscribe(datalog &#x3D;&gt; {
+              this.response &#x3D; datalog;
+              if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+                localStorage.removeItem(&#x27;logged&#x27;);
+                this.store.dispatch(new fromRoot.CleanRootScope());
+                window.location.href &#x3D; &#x27;/login&#x27;;
+              } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+                this.router.navigate([&#x27;/error&#x27;]);
+              }
+            }, error &#x3D;&gt; {
+              this.router.navigate([&#x27;/error&#x27;]);
+            });
+          }
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 401) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 500) {
+        this.router.navigate([&#x27;/error&#x27;]);
+      } else {
+        this.messageService.add({severity: &#x27;error&#x27;, summary: &#x27;Advertencia&#x27;, detail: data.msg, life: 3000});
+      }
+    }, error &#x3D;&gt; {
+      this.router.navigate([&#x27;/error&#x27;]);
+    });
+  }
+  
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'ciudad-1.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

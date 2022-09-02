@@ -1,0 +1,1899 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>wplay-intranet documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">wplay-intranet documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >MenuService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/services/menu/menu.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addMenu" >addMenu</a>
+                            </li>
+                            <li>
+                                <a href="#addPerfil" >addPerfil</a>
+                            </li>
+                            <li>
+                                <a href="#addPerfilSubMenu" >addPerfilSubMenu</a>
+                            </li>
+                            <li>
+                                <a href="#addSubMenu" >addSubMenu</a>
+                            </li>
+                            <li>
+                                <a href="#deleteMenu" >deleteMenu</a>
+                            </li>
+                            <li>
+                                <a href="#deletePerfil" >deletePerfil</a>
+                            </li>
+                            <li>
+                                <a href="#deletePerfilSubMenu" >deletePerfilSubMenu</a>
+                            </li>
+                            <li>
+                                <a href="#deleteSubMenu" >deleteSubMenu</a>
+                            </li>
+                            <li>
+                                <a href="#editMenu" >editMenu</a>
+                            </li>
+                            <li>
+                                <a href="#editPerfil" >editPerfil</a>
+                            </li>
+                            <li>
+                                <a href="#editPerfilSubMenu" >editPerfilSubMenu</a>
+                            </li>
+                            <li>
+                                <a href="#editSubMenu" >editSubMenu</a>
+                            </li>
+                            <li>
+                                <a href="#getClasificadorByType" >getClasificadorByType</a>
+                            </li>
+                            <li>
+                                <a href="#getMenuData" >getMenuData</a>
+                            </li>
+                            <li>
+                                <a href="#getMenuPerfilData" >getMenuPerfilData</a>
+                            </li>
+                            <li>
+                                <a href="#getMenuSelect" >getMenuSelect</a>
+                            </li>
+                            <li>
+                                <a href="#getPerfilData" >getPerfilData</a>
+                            </li>
+                            <li>
+                                <a href="#getPerfilesSelect" >getPerfilesSelect</a>
+                            </li>
+                            <li>
+                                <a href="#getSubMenuData" >getSubMenuData</a>
+                            </li>
+                            <li>
+                                <a href="#getSubMenuSelect" >getSubMenuSelect</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#handleError" >handleError</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/core/services/menu/menu.service.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addMenu"></a>
+                    <span class="name">
+                        <span ><b>addMenu</b></span>
+                        <a href="#addMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addMenu(menu: <a href="../interfaces/Menu.html" target="_self">Menu</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>menu</td>
+                                    <td>
+                                                <code><a href="../interfaces/Menu.html" target="_self" >Menu</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addPerfil"></a>
+                    <span class="name">
+                        <span ><b>addPerfil</b></span>
+                        <a href="#addPerfil"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addPerfil(perfil: <a href="../interfaces/Perfil.html" target="_self">Perfil</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="192"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:192</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>perfil</td>
+                                    <td>
+                                                <code><a href="../interfaces/Perfil.html" target="_self" >Perfil</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addPerfilSubMenu"></a>
+                    <span class="name">
+                        <span ><b>addPerfilSubMenu</b></span>
+                        <a href="#addPerfilSubMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addPerfilSubMenu(perfilSubmenu: <a href="../interfaces/PerfilSubmenu.html" target="_self">PerfilSubmenu</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="151"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>perfilSubmenu</td>
+                                    <td>
+                                                <code><a href="../interfaces/PerfilSubmenu.html" target="_self" >PerfilSubmenu</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addSubMenu"></a>
+                    <span class="name">
+                        <span ><b>addSubMenu</b></span>
+                        <a href="#addSubMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addSubMenu(subMenu: <a href="../interfaces/SubMenu.html" target="_self">SubMenu</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subMenu</td>
+                                    <td>
+                                                <code><a href="../interfaces/SubMenu.html" target="_self" >SubMenu</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteMenu"></a>
+                    <span class="name">
+                        <span ><b>deleteMenu</b></span>
+                        <a href="#deleteMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteMenu(menu: <a href="../interfaces/Menu.html" target="_self">Menu</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>menu</td>
+                                    <td>
+                                                <code><a href="../interfaces/Menu.html" target="_self" >Menu</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deletePerfil"></a>
+                    <span class="name">
+                        <span ><b>deletePerfil</b></span>
+                        <a href="#deletePerfil"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deletePerfil(perfil: <a href="../interfaces/Perfil.html" target="_self">Perfil</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>perfil</td>
+                                    <td>
+                                                <code><a href="../interfaces/Perfil.html" target="_self" >Perfil</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deletePerfilSubMenu"></a>
+                    <span class="name">
+                        <span ><b>deletePerfilSubMenu</b></span>
+                        <a href="#deletePerfilSubMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deletePerfilSubMenu(perfilSubmenu: <a href="../interfaces/PerfilSubmenu.html" target="_self">PerfilSubmenu</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>perfilSubmenu</td>
+                                    <td>
+                                                <code><a href="../interfaces/PerfilSubmenu.html" target="_self" >PerfilSubmenu</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteSubMenu"></a>
+                    <span class="name">
+                        <span ><b>deleteSubMenu</b></span>
+                        <a href="#deleteSubMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteSubMenu(subMenu: <a href="../interfaces/SubMenu.html" target="_self">SubMenu</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="126"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:126</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subMenu</td>
+                                    <td>
+                                                <code><a href="../interfaces/SubMenu.html" target="_self" >SubMenu</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editMenu"></a>
+                    <span class="name">
+                        <span ><b>editMenu</b></span>
+                        <a href="#editMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editMenu(menu: <a href="../interfaces/Menu.html" target="_self">Menu</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>menu</td>
+                                    <td>
+                                                <code><a href="../interfaces/Menu.html" target="_self" >Menu</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editPerfil"></a>
+                    <span class="name">
+                        <span ><b>editPerfil</b></span>
+                        <a href="#editPerfil"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editPerfil(perfil: <a href="../interfaces/Perfil.html" target="_self">Perfil</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="201"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:201</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>perfil</td>
+                                    <td>
+                                                <code><a href="../interfaces/Perfil.html" target="_self" >Perfil</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editPerfilSubMenu"></a>
+                    <span class="name">
+                        <span ><b>editPerfilSubMenu</b></span>
+                        <a href="#editPerfilSubMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editPerfilSubMenu(perfilSubmenu: <a href="../interfaces/PerfilSubmenu.html" target="_self">PerfilSubmenu</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>perfilSubmenu</td>
+                                    <td>
+                                                <code><a href="../interfaces/PerfilSubmenu.html" target="_self" >PerfilSubmenu</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editSubMenu"></a>
+                    <span class="name">
+                        <span ><b>editSubMenu</b></span>
+                        <a href="#editSubMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editSubMenu(subMenu: <a href="../interfaces/SubMenu.html" target="_self">SubMenu</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="116"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:116</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>subMenu</td>
+                                    <td>
+                                                <code><a href="../interfaces/SubMenu.html" target="_self" >SubMenu</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getClasificadorByType"></a>
+                    <span class="name">
+                        <span ><b>getClasificadorByType</b></span>
+                        <a href="#getClasificadorByType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getClasificadorByType(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="244"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:244</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMenuData"></a>
+                    <span class="name">
+                        <span ><b>getMenuData</b></span>
+                        <a href="#getMenuData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMenuData(obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMenuPerfilData"></a>
+                    <span class="name">
+                        <span ><b>getMenuPerfilData</b></span>
+                        <a href="#getMenuPerfilData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMenuPerfilData(obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMenuSelect"></a>
+                    <span class="name">
+                        <span ><b>getMenuSelect</b></span>
+                        <a href="#getMenuSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMenuSelect()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="220"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:220</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPerfilData"></a>
+                    <span class="name">
+                        <span ><b>getPerfilData</b></span>
+                        <a href="#getPerfilData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPerfilData(obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="178"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:178</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPerfilesSelect"></a>
+                    <span class="name">
+                        <span ><b>getPerfilesSelect</b></span>
+                        <a href="#getPerfilesSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPerfilesSelect()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="236"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:236</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSubMenuData"></a>
+                    <span class="name">
+                        <span ><b>getSubMenuData</b></span>
+                        <a href="#getSubMenuData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSubMenuData(obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSubMenuSelect"></a>
+                    <span class="name">
+                        <span ><b>getSubMenuSelect</b></span>
+                        <a href="#getSubMenuSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSubMenuSelect()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="228"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:228</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleError"></a>
+                    <span class="name">
+                        <span class="modifier">Static</span>
+                        <span ><b>handleError</b></span>
+                        <a href="#handleError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleError(error: <a href="../objects/es.html" target="_self">HttpErrorResponse</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/core/services/menu/menu.service.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>error</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#es" target="_self" >HttpErrorResponse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
+import {HttpClient, HttpErrorResponse} from &#x27;@angular/common/http&#x27;;
+import {environment} from &#x27;@environments/environment&#x27;;
+import {throwError} from &#x27;rxjs&#x27;;
+import {catchError} from &#x27;rxjs/operators&#x27;;
+import {ResponseModel} from &#x27;@core/models/response-model/ResponseModel&#x27;;
+
+interface Menu {
+  menu_id?: number;
+  descripcion: string;
+  pagina: string;
+  orden: number;
+  icono?: string;
+}
+
+interface SubMenu {
+  submenu_id?: number;
+  descripcion: string;
+  pagina: string;
+  menu_id: number;
+}
+
+interface PerfilSubmenu {
+  perfil_id: string;
+  submenu_id: number;
+  adicionar: string;
+  editar: string;
+  eliminar: string;
+}
+
+
+interface Perfil {
+  perfil_id: string;
+  descripcion: string;
+}
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class MenuService {
+  static handleError(error: HttpErrorResponse): any {
+    console.log(error);
+    return throwError(&#x27;Ha ocurrido un error.&#x27;);
+  }
+
+  constructor(private http: HttpClient) {
+  }
+
+  getMenuData(obj: any): any {
+    const dataObj: object &#x3D; {
+      metodo: &#x27;menuData&#x27;,
+      limit: obj.limit,
+      page: obj.page,
+      sort: obj.sort,
+      filter: obj.filter,
+      order: obj.order
+    };
+
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, dataObj).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  addMenu(menu: Menu): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;addMenu&#x27;,
+      data: menu
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  editMenu(menu: Menu): any {
+
+    const payLoad: object &#x3D; {
+      metodo: &#x27;editMenu&#x27;,
+      data: menu
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  deleteMenu(menu: Menu): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;deleteMenu&#x27;,
+      data: menu
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+// submenu
+
+  getSubMenuData(obj: any): any {
+    const dataObj: object &#x3D; {
+      metodo: &#x27;subMenuData&#x27;,
+      limit: obj.limit,
+      page: obj.page,
+      sort: obj.sort,
+      filter: obj.filter,
+      order: obj.order
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, dataObj).pipe(
+      catchError(MenuService.handleError));
+  }
+
+
+  addSubMenu(subMenu: SubMenu): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;addSubMenu&#x27;,
+      data: subMenu
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  editSubMenu(subMenu: SubMenu): any {
+
+    const payLoad: object &#x3D; {
+      metodo: &#x27;editSubMenu&#x27;,
+      data: subMenu
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  deleteSubMenu(subMenu: SubMenu): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;deleteSubMenu&#x27;,
+      data: subMenu
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  // perfiles submenu
+
+  getMenuPerfilData(obj: any): any {
+    const dataObj: object &#x3D; {
+      metodo: &#x27;getMenuPerfilData&#x27;,
+      limit: obj.limit,
+      page: obj.page,
+      sort: obj.sort,
+      filter: obj.filter,
+      order: obj.order
+    };
+
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, dataObj).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  addPerfilSubMenu(perfilSubmenu: PerfilSubmenu): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;addPerfilSubMenu&#x27;,
+      data: perfilSubmenu
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  editPerfilSubMenu(perfilSubmenu: PerfilSubmenu): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;editPerfilSubMenu&#x27;,
+      data: perfilSubmenu
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  deletePerfilSubMenu(perfilSubmenu: PerfilSubmenu): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;deletePerfilSubMenu&#x27;,
+      data: perfilSubmenu
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+  // perfil
+  getPerfilData(obj: any): any {
+    const dataObj: object &#x3D; {
+      metodo: &#x27;getPerfilData&#x27;,
+      limit: obj.limit,
+      page: obj.page,
+      sort: obj.sort,
+      filter: obj.filter,
+      order: obj.order
+    };
+
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, dataObj).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  addPerfil(perfil: Perfil): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;addPerfil&#x27;,
+      data: perfil
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  editPerfil(perfil: Perfil): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;editPerfil&#x27;,
+      data: perfil
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+  deletePerfil(perfil: Perfil): any {
+    const payLoad: object &#x3D; {
+      metodo: &#x27;deletePerfil&#x27;,
+      data: perfil
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, payLoad).pipe(
+      catchError(MenuService.handleError));
+  }
+
+
+  // select
+  getMenuSelect(): any {
+    const dataObj: object &#x3D; {
+      metodo: &#x27;getMenuSelect&#x27;
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, dataObj).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  getSubMenuSelect(): any {
+    const dataObj: object &#x3D; {
+      metodo: &#x27;getSubMenuSelect&#x27;
+    };
+    return this.http.post&lt;Response&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, dataObj).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  getPerfilesSelect(): any {
+    const dataObj: object &#x3D; {
+      metodo: &#x27;getPerfilesSelect&#x27;
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/menuCtrl.php&#x60;, dataObj).pipe(
+      catchError(MenuService.handleError));
+  }
+
+  getClasificadorByType(type: string): any {
+    const dataObj: object &#x3D; {
+      metodo: &#x27;getClasificadorByType&#x27;,
+      tipo: type
+    };
+    return this.http.post&lt;ResponseModel&gt;(&#x60;${environment.url_api}/utilsCtrl.php&#x60;, dataObj).pipe(
+        catchError(MenuService.handleError));
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'MenuService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

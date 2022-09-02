@@ -1,0 +1,1976 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>wplay-intranet documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">wplay-intranet documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  HeaderComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/components/header/header.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-header</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./header.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./header.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#activitySession" >activitySession</a>
+                            </li>
+                            <li>
+                                <a href="#cambioContrasena" >cambioContrasena</a>
+                            </li>
+                            <li>
+                                <a href="#changePass" >changePass</a>
+                            </li>
+                            <li>
+                                <a href="#closeModalPass" >closeModalPass</a>
+                            </li>
+                            <li>
+                                <a href="#dato$" >dato$</a>
+                            </li>
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#inactivitySession" >inactivitySession</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#logged" >logged</a>
+                            </li>
+                            <li>
+                                <a href="#menu" >menu</a>
+                            </li>
+                            <li>
+                                <a href="#navMenu" >navMenu</a>
+                            </li>
+                            <li>
+                                <a href="#notiArray" >notiArray</a>
+                            </li>
+                            <li>
+                                <a href="#pass" >pass</a>
+                            </li>
+                            <li>
+                                <a href="#response" >response</a>
+                            </li>
+                            <li>
+                                <a href="#result" >result</a>
+                            </li>
+                            <li>
+                                <a href="#view" >view</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cambioContrasenaSubmit" >cambioContrasenaSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#checkPass" >checkPass</a>
+                            </li>
+                            <li>
+                                <a href="#closeSession" >closeSession</a>
+                            </li>
+                            <li>
+                                <a href="#closeSessionTime" >closeSessionTime</a>
+                            </li>
+                            <li>
+                                <a href="#getNavMenu" >getNavMenu</a>
+                            </li>
+                            <li>
+                                <a href="#getNoti" >getNoti</a>
+                            </li>
+                            <li>
+                                <a href="#inactivityTime" >inactivityTime</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onRefresh" >onRefresh</a>
+                            </li>
+                            <li>
+                                <a href="#refreshUserStateKey" >refreshUserStateKey</a>
+                            </li>
+                            <li>
+                                <a href="#refreshUserStateMouse" >refreshUserStateMouse</a>
+                            </li>
+                            <li>
+                                <a href="#switchTheme" >switchTheme</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#document:keypress" >document:keypress</a>
+                            </li>
+                            <li>
+                                <a href="#window:mousemove" >window:mousemove</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, menuOptionsService: <a href="../injectables/MenuOptionsService.html" target="_self">MenuOptionsService</a>, utilsService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, store: Store<literal type>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, cd: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, cambioContrasenaService: <a href="../injectables/CambioContrasenaService.html" target="_self">CambioContrasenaService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/shared/components/header/header.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>menuOptionsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MenuOptionsService.html" target="_self" >MenuOptionsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>store</td>
+                                                  
+                                                        <td>
+                                                                    <code>Store&lt;literal type&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cd</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cambioContrasenaService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CambioContrasenaService.html" target="_self" >CambioContrasenaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="document:keypress"></a>
+                    <span class="name">
+                        <span ><b>document:keypress</b></span>
+                        <a href="#document:keypress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Arguments : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>document:keypress()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:88</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:mousemove"></a>
+                    <span class="name">
+                        <span ><b>window:mousemove</b></span>
+                        <a href="#window:mousemove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:mousemove()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:83</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cambioContrasenaSubmit"></a>
+                    <span class="name">
+                        <span ><b>cambioContrasenaSubmit</b></span>
+                        <a href="#cambioContrasenaSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cambioContrasenaSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="308"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:308</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPass"></a>
+                    <span class="name">
+                        <span ><b>checkPass</b></span>
+                        <a href="#checkPass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkPass()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="261"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:261</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeSession"></a>
+                    <span class="name">
+                        <span ><b>closeSession</b></span>
+                        <a href="#closeSession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeSession()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeSessionTime"></a>
+                    <span class="name">
+                        <span ><b>closeSessionTime</b></span>
+                        <a href="#closeSessionTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeSessionTime()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNavMenu"></a>
+                    <span class="name">
+                        <span ><b>getNavMenu</b></span>
+                        <a href="#getNavMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getNavMenu()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="151"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNoti"></a>
+                    <span class="name">
+                        <span ><b>getNoti</b></span>
+                        <a href="#getNoti"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getNoti()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inactivityTime"></a>
+                    <span class="name">
+                        <span ><b>inactivityTime</b></span>
+                        <a href="#inactivityTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>inactivityTime()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="355"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:355</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onRefresh"></a>
+                    <span class="name">
+                        <span ><b>onRefresh</b></span>
+                        <a href="#onRefresh"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onRefresh()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="332"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:332</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshUserStateKey"></a>
+                    <span class="name">
+                        <span ><b>refreshUserStateKey</b></span>
+                        <a href="#refreshUserStateKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refreshUserStateKey()</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@HostListener(&#x27;document:keypress&#x27;, [&#x27;$event&#x27;])<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshUserStateMouse"></a>
+                    <span class="name">
+                        <span ><b>refreshUserStateMouse</b></span>
+                        <a href="#refreshUserStateMouse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refreshUserStateMouse()</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@HostListener(&#x27;window:mousemove&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="switchTheme"></a>
+                    <span class="name">
+                        <span ><b>switchTheme</b></span>
+                        <a href="#switchTheme"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>switchTheme()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="344"
+                            class="link-to-prism">src/app/shared/components/header/header.component.ts:344</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activitySession"></a>
+                    <span class="name">
+                        <span ><b>activitySession</b></span>
+                        <a href="#activitySession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/shared/components/header/header.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cambioContrasena"></a>
+                    <span class="name">
+                        <span ><b>cambioContrasena</b></span>
+                        <a href="#cambioContrasena"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.fb.group({
+    contrasena_actual: [&#x27;&#x27;, Validators.compose([
+        Validators.required
+      ]
+    )],
+    n_contrasena: [&#x27;&#x27;, Validators.compose([
+        Validators.required,
+        Validators.pattern(new RegExp(&#x27;^(?&#x3D;.*[a-z])(?&#x3D;.*[A-Z])(?&#x3D;.*[0-9])(?&#x3D;.*[!@#\$%\^&amp;\*{}\.-])(?&#x3D;.{10,50})&#x27;))
+      ]
+    )], c_contrasena: [&#x27;&#x27;, Validators.compose([
+        Validators.required,
+        Validators.pattern(new RegExp(&#x27;^(?&#x3D;.*[a-z])(?&#x3D;.*[A-Z])(?&#x3D;.*[0-9])(?&#x3D;.*[!@#\$%\^&amp;\*{}\.-])(?&#x3D;.{10,50})&#x27;))
+      ]
+    )],
+    metodo: [&#x27;guardarConfiguracion&#x27;]
+  })</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/shared/components/header/header.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changePass"></a>
+                    <span class="name">
+                        <span ><b>changePass</b></span>
+                        <a href="#changePass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/shared/components/header/header.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeModalPass"></a>
+                    <span class="name">
+                        <span ><b>closeModalPass</b></span>
+                        <a href="#closeModalPass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/shared/components/header/header.component.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dato$"></a>
+                    <span class="name">
+                        <span ><b>dato$</b></span>
+                        <a href="#dato$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/State.html" target="_self" >Observable&lt;State&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/shared/components/header/header.component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="display"></a>
+                    <span class="name">
+                        <span ><b>display</b></span>
+                        <a href="#display"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/shared/components/header/header.component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inactivitySession"></a>
+                    <span class="name">
+                        <span ><b>inactivitySession</b></span>
+                        <a href="#inactivitySession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subject&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/shared/components/header/header.component.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logged"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>logged</b></span>
+                        <a href="#logged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/shared/components/header/header.component.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="menu"></a>
+                    <span class="name">
+                        <span ><b>menu</b></span>
+                        <a href="#menu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/shared/components/header/header.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navMenu"></a>
+                    <span class="name">
+                        <span ><b>navMenu</b></span>
+                        <a href="#navMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/shared/components/header/header.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="notiArray"></a>
+                    <span class="name">
+                        <span ><b>notiArray</b></span>
+                        <a href="#notiArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/shared/components/header/header.component.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pass"></a>
+                    <span class="name">
+                        <span ><b>pass</b></span>
+                        <a href="#pass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/shared/components/header/header.component.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="response"></a>
+                    <span class="name">
+                        <span ><b>response</b></span>
+                        <a href="#response"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ResponseModel.html" target="_self" >ResponseModel</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/shared/components/header/header.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="result"></a>
+                    <span class="name">
+                        <span ><b>result</b></span>
+                        <a href="#result"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/shared/components/header/header.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="view"></a>
+                    <span class="name">
+                        <span ><b>view</b></span>
+                        <a href="#view"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/shared/components/header/header.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {ChangeDetectorRef, Component, HostListener, OnInit} from &#x27;@angular/core&#x27;;
+import {Observable, Subject} from &#x27;rxjs&#x27;;
+import {AuthService} from &#x27;@core/services/auth/auth.service&#x27;;
+import {Router} from &#x27;@angular/router&#x27;;
+import * as fromRoot from &#x27;../../../rootScopeAction&#x27;;
+import {select, Store} from &#x27;@ngrx/store&#x27;;
+import {State} from &#x27;@core/models/store-model/StoreModel&#x27;;
+import {ResponseModel} from &#x27;@core/models/response-model/ResponseModel&#x27;;
+import Swal from &#x27;sweetalert2&#x27;;
+import {MenuOptionsService} from &#x27;@core/services/menu-options/menu-options.service&#x27;;
+import {UtilService} from &#x27;@core/services/util/util.service&#x27;;
+import {FormBuilder, Validators} from &#x27;@angular/forms&#x27;;
+import {CambioContrasenaService} from &#x27;@core/services/cambio-contrasena/cambio-contrasena.service&#x27;;
+import $ from &#x27;jquery&#x27;;
+
+interface NavMenu {
+  sub: string;
+  menu: string;
+  submenu_id: number;
+  pagina: string;
+  icono: string;
+}
+
+@Component({
+  selector: &#x27;app-header&#x27;,
+  templateUrl: &#x27;./header.component.html&#x27;,
+  styleUrls: [&#x27;./header.component.scss&#x27;]
+})
+export class HeaderComponent implements OnInit {
+
+  constructor(private authService: AuthService,
+              private menuOptionsService: MenuOptionsService,
+              private utilsService: UtilService,
+              private store: Store&lt;{ rootScope: State }&gt;,
+              private router: Router,
+              private fb: FormBuilder,
+              private cd: ChangeDetectorRef,
+              private cambioContrasenaService: CambioContrasenaService) {
+    this.dato$ &#x3D; store.pipe(select(&#x27;rootScope&#x27;));
+    this.inactivityTime();
+    this.inactivitySession.subscribe(() &#x3D;&gt; this.closeSessionTime());
+    this.logged &#x3D; JSON.parse(localStorage.getItem(&#x27;logged&#x27;));
+    const theme &#x3D; localStorage.getItem(&#x27;Theme&#x27;);
+    if (theme &#x3D;&#x3D;&#x3D; &#x27;DARK&#x27;) {
+      $(&#x27;body&#x27;).removeClass(&#x27;themeLight&#x27;);
+    } else {
+      $(&#x27;body&#x27;).addClass(&#x27;themeLight&#x27;);
+    }
+  }
+
+  response: ResponseModel;
+  result: any[];
+  navMenu: any;
+  activitySession;
+  inactivitySession: Subject&lt;any&gt; &#x3D; new Subject();
+  display: boolean;
+  public logged: Observable&lt;boolean&gt;;
+  view &#x3D; false;
+  dato$: Observable&lt;State&gt;;
+  menu &#x3D; [];
+  notiArray &#x3D; [];
+  changePass &#x3D; false;
+  closeModalPass &#x3D; true;
+  pass &#x3D; &#x27;&#x27;;
+
+  cambioContrasena &#x3D; this.fb.group({
+    contrasena_actual: [&#x27;&#x27;, Validators.compose([
+        Validators.required
+      ]
+    )],
+    n_contrasena: [&#x27;&#x27;, Validators.compose([
+        Validators.required,
+        Validators.pattern(new RegExp(&#x27;^(?&#x3D;.*[a-z])(?&#x3D;.*[A-Z])(?&#x3D;.*[0-9])(?&#x3D;.*[!@#\$%\^&amp;\*{}\.-])(?&#x3D;.{10,50})&#x27;))
+      ]
+    )], c_contrasena: [&#x27;&#x27;, Validators.compose([
+        Validators.required,
+        Validators.pattern(new RegExp(&#x27;^(?&#x3D;.*[a-z])(?&#x3D;.*[A-Z])(?&#x3D;.*[0-9])(?&#x3D;.*[!@#\$%\^&amp;\*{}\.-])(?&#x3D;.{10,50})&#x27;))
+      ]
+    )],
+    metodo: [&#x27;guardarConfiguracion&#x27;]
+  });
+
+  @HostListener(&#x27;window:mousemove&#x27;) refreshUserStateMouse(): void {
+    clearTimeout(this.activitySession);
+    this.inactivityTime();
+  }
+
+  @HostListener(&#x27;document:keypress&#x27;, [&#x27;$event&#x27;]) refreshUserStateKey(): void {
+    clearTimeout(this.activitySession);
+    this.inactivityTime();
+  }
+
+  inactivityTime(): void {
+    this.activitySession &#x3D; setTimeout(() &#x3D;&gt; this.inactivitySession.next(undefined), 2200000);
+  }
+
+  closeSessionTime(): void {
+    if (this.logged) {
+      this.authService.logout().subscribe(data &#x3D;&gt; {
+        this.response &#x3D; data;
+        if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+          localStorage.removeItem(&#x27;logged&#x27;);
+          localStorage.removeItem(&#x27;tok&#x27;);
+          this.store.dispatch(new fromRoot.CleanRootScope());
+          Swal.fire({
+            icon: &#x27;info&#x27;,
+            title: &#x27;Advertencias&#x27;,
+            timer: 1500,
+            showConfirmButton: false,
+            text: &#x27;Ha caducado el tiempo de sesión&#x27;,
+          }).then(() &#x3D;&gt; {
+            window.location.href &#x3D; &#x27;/login&#x27;;
+            // this.router.navigate([&#x27;/login&#x27;]);
+          });
+        } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+          this.router.navigate([&#x27;/error&#x27;]);
+        }
+      }, error &#x3D;&gt; {
+        this.router.navigate([&#x27;/error&#x27;]);
+      });
+    }
+  }
+
+  closeSession(): void {
+    if (this.logged) {
+      this.authService.logout().subscribe(data &#x3D;&gt; {
+        this.response &#x3D; data;
+        if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+          localStorage.removeItem(&#x27;logged&#x27;);
+          localStorage.removeItem(&#x27;tok&#x27;);
+          this.store.dispatch(new fromRoot.CleanRootScope());
+          Swal.fire({
+            icon: &#x27;info&#x27;,
+            title: &#x27;Advertencia&#x27;,
+            timer: 1500,
+            showConfirmButton: false,
+            text: &#x27;Ha cerrado sesión&#x27;,
+          }).then(() &#x3D;&gt; {
+            window.location.href &#x3D; &#x27;/login&#x27;;
+            // this.router.navigate([&#x27;/login&#x27;]);
+          });
+        } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+          this.router.navigate([&#x27;/error&#x27;]);
+        }
+      }, error &#x3D;&gt; {
+        this.router.navigate([&#x27;/error&#x27;]);
+      });
+    }
+  }
+
+  getNavMenu(): void {
+    this.menuOptionsService.getNavMenu().subscribe(data &#x3D;&gt; {
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.navMenu &#x3D; data.dataObjet.data;
+        console.log(this.navMenu);
+      } else if (data.state &#x3D;&#x3D;&#x3D; 402) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          if (this.logged) {
+            this.authService.logout().subscribe(datalog &#x3D;&gt; {
+              this.response &#x3D; datalog;
+              if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+                localStorage.removeItem(&#x27;logged&#x27;);
+                this.store.dispatch(new fromRoot.CleanRootScope());
+                window.location.href &#x3D; &#x27;/login&#x27;;
+              } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+                this.router.navigate([&#x27;/error&#x27;]);
+              }
+            }, error &#x3D;&gt; {
+              this.router.navigate([&#x27;/error&#x27;]);
+            });
+          }
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 401) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 500) {
+        this.router.navigate([&#x27;/error&#x27;]);
+      } else {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        });
+      }
+    }, error &#x3D;&gt; {
+      console.log(error);
+    });
+  }
+
+  getNoti(): void {
+    this.menuOptionsService.getNotiData().subscribe(data &#x3D;&gt; {
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        console.log(data);
+        this.notiArray &#x3D; data.dataArray;
+      } else if (data.state &#x3D;&#x3D;&#x3D; 402) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          if (this.logged) {
+            this.authService.logout().subscribe(datalog &#x3D;&gt; {
+              this.response &#x3D; datalog;
+              if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+                localStorage.removeItem(&#x27;logged&#x27;);
+                this.store.dispatch(new fromRoot.CleanRootScope());
+                window.location.href &#x3D; &#x27;/login&#x27;;
+              } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+                this.router.navigate([&#x27;/error&#x27;]);
+              }
+            }, error &#x3D;&gt; {
+              this.router.navigate([&#x27;/error&#x27;]);
+            });
+          }
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 401) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 500) {
+        this.router.navigate([&#x27;/error&#x27;]);
+      } else {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        });
+      }
+    }, error &#x3D;&gt; {
+      console.log(error);
+    });
+  }
+
+  checkPass(): void {
+    this.authService.checkPass().subscribe(data &#x3D;&gt; {
+      this.response &#x3D; data;
+      if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+        if (data.dataObjet.pass &#x3D;&#x3D;&#x3D; 1) {
+          this.changePass &#x3D; true;
+          this.closeModalPass &#x3D; false;
+          return;
+        }
+        if (data.dataObjet.updated &#x3D;&#x3D;&#x3D; 1) {
+          Swal.fire({
+            icon: &#x27;info&#x27;,
+            title: &#x27;Información&#x27;,
+            text: &#x27;Debes llenar tus datos en el módulo &quot;Mis datos&quot;, serás redireccionado. Esta actualización es obligatoria.&#x27;,
+            showConfirmButton: true,
+          }).then(() &#x3D;&gt; {
+            this.router.navigate([&#x27;/empleados/mis-datos&#x27;]);
+          });
+        }
+        if (data.dataObjet.updated &#x3D;&#x3D;&#x3D; 4) {
+          Swal.fire({
+            icon: &#x27;info&#x27;,
+            title: &#x27;Información&#x27;,
+            text: &#x27;Ya llenaste tus datos, estos están en proceso de verificación por parte de RRHH, espera la verificación en tu correo electrónico. Mientras esperas, puedes llenar la información de tus hijos, estudios, mascotas y vehículos, en el módulo de Mis datos.&#x27;,
+            showConfirmButton: true,
+          }).then(() &#x3D;&gt; {
+            this.router.navigate([&#x27;/empleados/mis-datos&#x27;]);
+          });
+        }
+        if (data.dataObjet.updated &#x3D;&#x3D;&#x3D; 2) {
+          Swal.fire({
+            icon: &#x27;info&#x27;,
+            title: &#x27;Información&#x27;,
+            text: &#x27;Tu actualización de datos fue rechazada, verífica tus datos en el módulo &quot;Mis datos&quot;, serás redireccionado. Esta actualización, es obligatoria.&#x27;,
+            showConfirmButton: true,
+          }).then(() &#x3D;&gt; {
+            this.router.navigate([&#x27;/empleados/mis-datos&#x27;]);
+          });
+        }
+      } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+        this.router.navigate([&#x27;/error&#x27;]);
+      }
+    }, error &#x3D;&gt; {
+      this.router.navigate([&#x27;/error&#x27;]);
+    });
+  }
+
+  cambioContrasenaSubmit(): void {
+    this.cambioContrasenaService.cambioContrasena(this.cambioContrasena.value).subscribe(data &#x3D;&gt; {
+      this.response &#x3D; data;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        Swal.fire({
+          icon: &#x27;success&#x27;,
+          title: &#x27;&#x27;,
+          timer: 5000,
+          showConfirmButton: false,
+          text: data.msg,
+        });
+        this.onRefresh();
+      } else {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 4000,
+          showConfirmButton: false,
+          text: data.msg,
+        });
+      }
+    });
+  }
+
+  onRefresh(): void {
+    this.router.routeReuseStrategy.shouldReuseRoute &#x3D; () &#x3D;&gt; false;
+
+    const currentUrl &#x3D; this.router.url + &#x27;?&#x27;;
+
+    this.router.navigateByUrl(currentUrl)
+      .then(() &#x3D;&gt; {
+        this.router.navigated &#x3D; false;
+        this.router.navigate([this.router.url]);
+      });
+  }
+
+  switchTheme(): void {
+    const getTheme &#x3D; localStorage.getItem(&#x27;Theme&#x27;);
+    if (getTheme &#x3D;&#x3D;&#x3D; &#x27;LIGHT&#x27;) {
+      localStorage.setItem(&#x27;Theme&#x27;, &#x27;DARK&#x27;);
+      $(&#x27;body&#x27;).removeClass(&#x27;themeLight&#x27;);
+    } else {
+      localStorage.setItem(&#x27;Theme&#x27;, &#x27;LIGHT&#x27;);
+      $(&#x27;body&#x27;).addClass(&#x27;themeLight&#x27;);
+    }
+  }
+
+  ngOnInit(): void {
+    this.getNavMenu();
+    this.getNoti();
+    this.checkPass();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;header&quot;&gt;
+  &lt;div class&#x3D;&quot;logo&quot;&gt;
+    &lt;img src&#x3D;&quot;assets/img/logo_w.png&quot; alt&#x3D;&quot;Logo&quot; class&#x3D;&quot;hidden-xs hidden-sm&quot;&gt;
+    &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;overlay-input&quot;/&gt;
+    &lt;nav id&#x3D;&quot;overlay&quot;&gt;
+      &lt;div class&#x3D;&quot;divSubMenu&quot;&gt;
+        &lt;a id&#x3D;&quot;home&quot; routerLink&#x3D;&quot;/&quot;&gt;&lt;span&gt;&lt;i class&#x3D;&quot;iconMenu icon-home&quot;&gt;&lt;/i&gt;&lt;span&gt;Dashboard&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;divSubMenu&quot; *ngFor&#x3D;&quot;let item of navMenu&quot;&gt;
+        &lt;a href&#x3D;&quot;javascript:void(0)&quot; (click)&#x3D;&quot;view &#x3D; !view&quot;&gt;&lt;span&gt;&lt;i
+          class&#x3D;&quot;iconMenu icon-user&quot;&gt;&lt;/i&gt;&lt;span&gt;{{item.data.proceso}}&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class&#x3D;&quot;divMenuInterno&quot;&gt;
+          &lt;h3&gt;APP {{item.data.proceso}}&lt;/h3&gt;
+          &lt;div class&#x3D;&quot;subMenuInterno&quot; *ngFor&#x3D;&quot;let sub of item.children&quot;&gt;
+            &lt;!--&lt;a [routerLink]&#x3D;&quot;sub.data.ruta_a&quot; class&#x3D;&quot;linkSubMenu&quot;&gt;&lt;i class&#x3D;&quot;iconMenu icon-user&quot;&gt;&lt;/i&gt;{{sub.data.aplicacion}}&lt;/a&gt; Ruta para la app--&gt;
+            &lt;a href&#x3D;&quot;javascript:void(0)&quot; class&#x3D;&quot;linkSubMenu&quot;&gt;&lt;i class&#x3D;&quot;iconMenu icon-user&quot;&gt;&lt;/i&gt;{{sub.data.aplicacion}}
+            &lt;/a&gt;
+            &lt;div class&#x3D;&quot;subMenuMenu&quot;&gt;
+              &lt;a *ngFor&#x3D;&quot;let subSub of sub.children&quot; [routerLink]&#x3D;&quot;subSub.data.ruta_m&quot;&gt;{{subSub.data.menu}}&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;infoSession&quot;&gt;
+    &lt;div&gt;
+      &lt;img src&#x3D;&quot;assets/img/newLogo.png&quot; alt&#x3D;&quot;Wplay&quot; style&#x3D;&quot;width: 80px; margin-right: 30px&quot;&gt;
+      &lt;!--&lt;label for&#x3D;&quot;overlay-input&quot; id&#x3D;&quot;overlay-button&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/label&gt;--&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;actionsSession&quot;&gt;
+      &lt;div class&#x3D;&quot;userCon outIcon userConLabel&quot;&gt;
+        &lt;label for&#x3D;&quot;busChekc&quot;&gt;&lt;i class&#x3D;&quot;iconMenu icon-search&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;busChekc&quot;&gt;
+        &lt;div class&#x3D;&quot;buscador-header&quot;&gt;
+          &lt;input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Escribe tu busqueda&quot;&gt;
+          &lt;label for&#x3D;&quot;busChekc&quot;&gt;&lt;i class&#x3D;&quot;iconMenu&quot;&gt;&amp;times;&lt;/i&gt;&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;userCon outIcon userConLabel&quot;&gt;
+        &lt;label for&#x3D;&quot;confChekc&quot;&gt;&lt;i class&#x3D;&quot;iconMenu icon-cog&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;confChekc&quot;&gt;
+        &lt;div class&#x3D;&quot;conf&quot;&gt;
+          &lt;div class&#x3D;&quot;cont-conf&quot;&gt;
+            &lt;div class&#x3D;&quot;h-conf&quot;&gt;
+              &lt;h3&gt;Configuración&lt;/h3&gt;
+              &lt;label for&#x3D;&quot;confChekc&quot;&gt;&lt;span class&#x3D;&quot;close-conf&quot;&gt;&amp;times;&lt;/span&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;b-conf&quot;&gt;
+              &lt;button (click)&#x3D;&quot;switchTheme()&quot;&gt;theme&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;f-conf&quot;&gt;
+              &lt;a class&#x3D;&quot;&quot; href&#x3D;&quot;#&quot;&gt;Ver mas notificaciones&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;userCon outIcon userConLabel&quot;&gt;
+        &lt;label for&#x3D;&quot;notiChekc&quot;&gt;&lt;i class&#x3D;&quot;iconMenu fa fa-bell-o&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;notiChekc&quot;&gt;
+        &lt;div class&#x3D;&quot;noti&quot;&gt;
+          &lt;div class&#x3D;&quot;cont-noti&quot;&gt;
+            &lt;div class&#x3D;&quot;h-noti&quot;&gt;
+              &lt;h3&gt;Notificaciones&lt;/h3&gt;
+              &lt;label for&#x3D;&quot;notiChekc&quot;&gt;&lt;span class&#x3D;&quot;close-noti&quot;&gt;&amp;times;&lt;/span&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;b-noti&quot;&gt;
+
+              &lt;div class&#x3D;&quot;newNoti&quot; *ngFor&#x3D;&quot;let item of notiArray&quot;&gt;
+                &lt;div&gt;
+                  &lt;i class&#x3D;&quot;iconMenu icon-seguridad&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                  &lt;span&gt;{{&#x27;Actualización de datos&#x27;}}&lt;/span&gt;
+                  &lt;p&gt;{{item.mensaje}}&lt;/p&gt;
+                  &lt;a href&#x3D;&quot;{{item.accion}}&quot;&gt;Actualizar&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;f-noti&quot;&gt;
+              &lt;a class&#x3D;&quot;&quot; href&#x3D;&quot;#&quot;&gt;Ver mas notificaciones&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;userCon menuHover&quot;&gt;
+        &lt;i class&#x3D;&quot;iconMenu icon-user&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;hidden-xs hidden-sm&quot;&gt;{{(dato$ | async)?.name}}&lt;/span&gt;
+        &lt;div class&#x3D;&quot;menuUser&quot;&gt;
+          &lt;!--&lt;a class&#x3D;&quot;notHover hidden-md hidden-lg&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;&lt;i class&#x3D;&quot;&quot;&gt;ID&lt;/i&gt;&lt;span&gt;{{(dato$ | async)?.usuario}}&lt;/span&gt;&lt;/a&gt;--&gt;
+          &lt;a class&#x3D;&quot;notHover&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;&lt;i class&#x3D;&quot;&quot;&gt;ID&lt;/i&gt;&lt;span&gt;{{(dato$ | async)?.usuario}}&lt;/span&gt;&lt;/a&gt;
+          &lt;a class&#x3D;&quot;notHover&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;&lt;i class&#x3D;&quot;&quot;&gt;IP&lt;/i&gt;&lt;span&gt;{{(dato$ | async)?.ip}}&lt;/span&gt;&lt;/a&gt;
+          &lt;a href&#x3D;&quot;javascript:void(0)&quot; (click)&#x3D;&quot;changePass &#x3D; true; closeModalPass &#x3D; true&quot;&gt;&lt;i class&#x3D;&quot;iconMenu icon-seguridad&quot;&gt;&lt;/i&gt;&lt;span&gt;Cambiar contraseña&lt;/span&gt;&lt;/a&gt;
+          &lt;a href&#x3D;&quot;javascript:void(0)&quot; (click)&#x3D;&quot;closeSession()&quot;&gt;&lt;i class&#x3D;&quot;iconMenu fa fa-times-circle-o&quot;&gt;&lt;/i&gt;&lt;span&gt;Cerrar sesión&lt;/span&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p-dialog [(visible)]&#x3D;&quot;changePass&quot; [style]&#x3D;&quot;{width: &#x27;350px&#x27;}&quot; [modal]&#x3D;&quot;true&quot; styleClass&#x3D;&quot;p-fluid&quot; [closable]&#x3D;&quot;closeModalPass&quot; header&#x3D;&quot;Asignar nueva clave&quot;&gt;
+    &lt;ng-template pTemplate&#x3D;&quot;content&quot;&gt;
+      &lt;span class&#x3D;&quot;small&quot;&gt;&lt;b&gt;IMPORTANTE&lt;/b&gt;&lt;/span&gt;&lt;br&gt;
+      &lt;span class&#x3D;&quot;small&quot;&gt;La contraseña debe cumplir lo siguiente: &lt;br&gt; - Una letra minúscula &lt;br&gt; - Una letra mayúscula &lt;br&gt; - Un número &lt;br&gt; - Un carácter especial &lt;br&gt; - Mínimo 10 caracteres de longitud&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+      &lt;form [formGroup]&#x3D;&quot;cambioContrasena&quot;&gt;
+        &lt;div class&#x3D;&quot;row groupInput&quot;&gt;
+          &lt;div class&#x3D;&quot;col-12&quot;&gt;
+            &lt;div class&#x3D;&quot;inputGNew&quot;&gt;
+              &lt;label for&#x3D;&quot;contrasena_actual&quot;&gt;Contraseña actual&lt;/label&gt;
+              &lt;input id&#x3D;&quot;contrasena_actual&quot; type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;contrasena_actual&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;row groupInput&quot;&gt;
+          &lt;div class&#x3D;&quot;col-12&quot;&gt;
+            &lt;div class&#x3D;&quot;inputGNew&quot; [ngClass]&#x3D;&quot;cambioContrasena.controls[&#x27;n_contrasena&#x27;].hasError(&#x27;pattern&#x27;) ? &#x27;has-error&#x27; : &#x27;has-success&#x27;&quot;&gt;
+              &lt;label for&#x3D;&quot;n_contrasena&quot;&gt;Nueva contraseña&lt;/label&gt;
+              &lt;input id&#x3D;&quot;n_contrasena&quot; type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;n_contrasena&quot;&gt;
+              &lt;div class&#x3D;&quot;inputError&quot; *ngIf&#x3D;&quot;cambioContrasena.controls[&#x27;n_contrasena&#x27;].dirty || cambioContrasena.controls[&#x27;n_contrasena&#x27;].touched&quot;&gt;
+                &lt;div *ngIf&#x3D;&quot;cambioContrasena.controls[&#x27;n_contrasena&#x27;].hasError(&#x27;required&#x27;)&quot;&gt;
+                  &lt;span class&#x3D;&quot;iconErrorInput&quot;&gt;&lt;b&gt;!&lt;/b&gt;&lt;/span&gt;
+                  &lt;span class&#x3D;&quot;text-danger&quot;&gt; Este campo es obligatorio &lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div *ngIf&#x3D;&quot;cambioContrasena.controls[&#x27;n_contrasena&#x27;].hasError(&#x27;pattern&#x27;)&quot;&gt;
+                  &lt;span class&#x3D;&quot;iconErrorInput&quot;&gt;&lt;b&gt;!&lt;/b&gt;&lt;/span&gt;
+                  &lt;span class&#x3D;&quot;text-danger&quot;&gt;La nueva contraseña debe contener mínimamente: &lt;br&gt; - Una letra minúscula &lt;br&gt; - Una letra mayúscula &lt;br&gt; - Un número &lt;br&gt; - Un carácter especial. &lt;br&gt; Mínimo 10 caracteres de longitud&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div *ngIf&#x3D;&quot;!cambioContrasena.controls[&#x27;n_contrasena&#x27;].hasError(&#x27;pattern&#x27;)&quot;&gt;
+                  &lt;span class&#x3D;&quot;iconErrorInput InfoSuccess&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/span&gt;
+                  &lt;span class&#x3D;&quot;text-danger TextSuccess&quot;&gt;Contraseña valida&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;row groupInput&quot;&gt;
+          &lt;div class&#x3D;&quot;col-12&quot;&gt;
+            &lt;div class&#x3D;&quot;inputGNew&quot;&gt;
+              &lt;label for&#x3D;&quot;c_contrasena&quot;&gt;Confirmar contraseña&lt;/label&gt;
+              &lt;input id&#x3D;&quot;c_contrasena&quot; type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;c_contrasena&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/ng-template&gt;
+    &lt;ng-template pTemplate&#x3D;&quot;footer&quot;&gt;
+      &lt;button [disabled]&#x3D;&quot;cambioContrasena.invalid&quot; pButton label&#x3D;&quot;Guardar&quot; icon&#x3D;&quot;pi pi-check&quot; class&#x3D;&quot;p-button-text&quot; (click)&#x3D;&quot;cambioContrasenaSubmit()&quot;&gt;&lt;/button&gt;
+    &lt;/ng-template&gt;
+  &lt;/p-dialog&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./header.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="header">  <div class="logo">    <img src="assets/img/logo_w.png" alt="Logo" class="hidden-xs hidden-sm">    <input type="checkbox" id="overlay-input"/>    <nav id="overlay">      <div class="divSubMenu">        <a id="home" routerLink="/"><span><i class="iconMenu icon-home"></i><span>Dashboard</span></span></a>      </div>      <div class="divSubMenu" *ngFor="let item of navMenu">        <a href="javascript:void(0)" (click)="view = !view"><span><i          class="iconMenu icon-user"></i><span>{{item.data.proceso}}</span></span></a>        <div class="divMenuInterno">          <h3>APP {{item.data.proceso}}</h3>          <div class="subMenuInterno" *ngFor="let sub of item.children">            <!--<a [routerLink]="sub.data.ruta_a" class="linkSubMenu"><i class="iconMenu icon-user"></i>{{sub.data.aplicacion}}</a> Ruta para la app-->            <a href="javascript:void(0)" class="linkSubMenu"><i class="iconMenu icon-user"></i>{{sub.data.aplicacion}}            </a>            <div class="subMenuMenu">              <a *ngFor="let subSub of sub.children" [routerLink]="subSub.data.ruta_m">{{subSub.data.menu}}</a>            </div>          </div>        </div>      </div>    </nav>  </div>  <div class="infoSession">    <div>      <img src="assets/img/newLogo.png" alt="Wplay" style="width: 80px; margin-right: 30px">      <!--<label for="overlay-input" id="overlay-button"><span></span></label>-->    </div>    <div class="actionsSession">      <div class="userCon outIcon userConLabel">        <label for="busChekc"><i class="iconMenu icon-search"></i></label>        <input type="checkbox" id="busChekc">        <div class="buscador-header">          <input type="text" placeholder="Escribe tu busqueda">          <label for="busChekc"><i class="iconMenu">&times;</i></label>        </div>      </div>      <div class="userCon outIcon userConLabel">        <label for="confChekc"><i class="iconMenu icon-cog"></i></label>        <input type="checkbox" id="confChekc">        <div class="conf">          <div class="cont-conf">            <div class="h-conf">              <h3>Configuración</h3>              <label for="confChekc"><span class="close-conf">&times;</span></label>            </div>            <div class="b-conf">              <button (click)="switchTheme()">theme</button>            </div>            <div class="f-conf">              <a class="" href="#">Ver mas notificaciones</a>            </div>          </div>        </div>      </div>      <div class="userCon outIcon userConLabel">        <label for="notiChekc"><i class="iconMenu fa fa-bell-o"></i></label>        <input type="checkbox" id="notiChekc">        <div class="noti">          <div class="cont-noti">            <div class="h-noti">              <h3>Notificaciones</h3>              <label for="notiChekc"><span class="close-noti">&times;</span></label>            </div>            <div class="b-noti">              <div class="newNoti" *ngFor="let item of notiArray">                <div>                  <i class="iconMenu icon-seguridad"></i>                </div>                <div>                  <span>{{\'Actualización de datos\'}}</span>                  <p>{{item.mensaje}}</p>                  <a href="{{item.accion}}">Actualizar</a>                </div>              </div>            </div>            <div class="f-noti">              <a class="" href="#">Ver mas notificaciones</a>            </div>          </div>        </div>      </div>      <div class="userCon menuHover">        <i class="iconMenu icon-user"></i><span class="hidden-xs hidden-sm">{{(dato$ | async)?.name}}</span>        <div class="menuUser">          <!--<a class="notHover hidden-md hidden-lg" href="javascript:void(0)"><i class="">ID</i><span>{{(dato$ | async)?.usuario}}</span></a>-->          <a class="notHover" href="javascript:void(0)"><i class="">ID</i><span>{{(dato$ | async)?.usuario}}</span></a>          <a class="notHover" href="javascript:void(0)"><i class="">IP</i><span>{{(dato$ | async)?.ip}}</span></a>          <a href="javascript:void(0)" (click)="changePass = true; closeModalPass = true"><i class="iconMenu icon-seguridad"></i><span>Cambiar contraseña</span></a>          <a href="javascript:void(0)" (click)="closeSession()"><i class="iconMenu fa fa-times-circle-o"></i><span>Cerrar sesión</span></a>        </div>      </div>    </div>  </div>  <p-dialog [(visible)]="changePass" [style]="{width: \'350px\'}" [modal]="true" styleClass="p-fluid" [closable]="closeModalPass" header="Asignar nueva clave">    <ng-template pTemplate="content">      <span class="small"><b>IMPORTANTE</b></span><br>      <span class="small">La contraseña debe cumplir lo siguiente: <br> - Una letra minúscula <br> - Una letra mayúscula <br> - Un número <br> - Un carácter especial <br> - Mínimo 10 caracteres de longitud</span><br><br>      <form [formGroup]="cambioContrasena">        <div class="row groupInput">          <div class="col-12">            <div class="inputGNew">              <label for="contrasena_actual">Contraseña actual</label>              <input id="contrasena_actual" type="password" class="form-control" formControlName="contrasena_actual">            </div>          </div>        </div>        <div class="row groupInput">          <div class="col-12">            <div class="inputGNew" [ngClass]="cambioContrasena.controls[\'n_contrasena\'].hasError(\'pattern\') ? \'has-error\' : \'has-success\'">              <label for="n_contrasena">Nueva contraseña</label>              <input id="n_contrasena" type="password" class="form-control" formControlName="n_contrasena">              <div class="inputError" *ngIf="cambioContrasena.controls[\'n_contrasena\'].dirty || cambioContrasena.controls[\'n_contrasena\'].touched">                <div *ngIf="cambioContrasena.controls[\'n_contrasena\'].hasError(\'required\')">                  <span class="iconErrorInput"><b>!</b></span>                  <span class="text-danger"> Este campo es obligatorio </span>                </div>                <div *ngIf="cambioContrasena.controls[\'n_contrasena\'].hasError(\'pattern\')">                  <span class="iconErrorInput"><b>!</b></span>                  <span class="text-danger">La nueva contraseña debe contener mínimamente: <br> - Una letra minúscula <br> - Una letra mayúscula <br> - Un número <br> - Un carácter especial. <br> Mínimo 10 caracteres de longitud</span>                </div>                <div *ngIf="!cambioContrasena.controls[\'n_contrasena\'].hasError(\'pattern\')">                  <span class="iconErrorInput InfoSuccess"><b></b></span>                  <span class="text-danger TextSuccess">Contraseña valida</span>                </div>              </div>            </div>          </div>        </div>        <div class="row groupInput">          <div class="col-12">            <div class="inputGNew">              <label for="c_contrasena">Confirmar contraseña</label>              <input id="c_contrasena" type="password" class="form-control" formControlName="c_contrasena">            </div>          </div>        </div>      </form>    </ng-template>    <ng-template pTemplate="footer">      <button [disabled]="cambioContrasena.invalid" pButton label="Guardar" icon="pi pi-check" class="p-button-text" (click)="cambioContrasenaSubmit()"></button>    </ng-template>  </p-dialog></div></div>'
+    var COMPONENTS = [{'name': 'ActivoListaComponent', 'selector': 'app-activo-lista'},{'name': 'AgregarComponent', 'selector': 'app-agregar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarActivosComponent', 'selector': 'app-asignar-activos'},{'name': 'CaptchaComponent', 'selector': 'app-captcha'},{'name': 'CargInventarioComponent', 'selector': 'app-carg-inventario'},{'name': 'ChartRechargeComponent', 'selector': 'app-chart-recharge'},{'name': 'ChartWhitdrawComponent', 'selector': 'app-chart-whitdraw'},{'name': 'ClasificadorComponent', 'selector': 'app-clasificador'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'CrearClasificadorComponent', 'selector': 'app-crear-clasificador'},{'name': 'CrearProductosComponent', 'selector': 'app-crear-productos'},{'name': 'EditarContactoComponent', 'selector': 'app-editar-contacto'},{'name': 'EjemploComponent', 'selector': 'app-ejemplo'},{'name': 'EmpleadoActualizarInicioComponent', 'selector': 'app-empleado-actualizar-inicio'},{'name': 'EmpleadoEstudiosComponent', 'selector': 'app-empleado-estudios'},{'name': 'EmpleadoHijosComponent', 'selector': 'app-empleado-hijos'},{'name': 'EmpleadoListaComponent', 'selector': 'app-empleado-lista'},{'name': 'EmpleadoMascotasComponent', 'selector': 'app-empleado-mascotas'},{'name': 'EmpleadoNuevoComponent', 'selector': 'app-empleado-nuevo'},{'name': 'EmpleadoNuevoCortoComponent', 'selector': 'app-empleado-nuevo-corto'},{'name': 'EmpleadoPendienteAplicarComponent', 'selector': 'app-empleado-pendiente-aplicar'},{'name': 'EmpleadoVehiculoComponent', 'selector': 'app-empleado-vehiculo'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'FavoritesComponent', 'selector': 'app-favorites'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'GestionComponent', 'selector': 'app-gestion'},{'name': 'GestionJefeComponent', 'selector': 'app-gestion-jefe'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HojaDeVidaComponent', 'selector': 'app-hoja-de-vida'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HvComponent', 'selector': 'app-hv'},{'name': 'IndicatorsComponent', 'selector': 'app-indicators'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'ListarProductosComponent', 'selector': 'app-listar-productos'},{'name': 'ListarProveedorComponent', 'selector': 'app-listar-proveedor'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MenuPerfilComponent', 'selector': 'app-menu-perfil'},{'name': 'MiembrosComponent', 'selector': 'app-miembros'},{'name': 'MisDatosComponent', 'selector': 'app-mis-datos'},{'name': 'NavegacionComponent', 'selector': 'app-navegacion'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PerfilComponent', 'selector': 'app-perfil'},{'name': 'PerfilesComponent', 'selector': 'app-perfiles'},{'name': 'PublicacionesComponent', 'selector': 'app-publicaciones'},{'name': 'ReAgregarComponent', 'selector': 'app-re-agregar'},{'name': 'RecuperaClaveComponent', 'selector': 'app-recupera-clave'},{'name': 'ReGestionComponent', 'selector': 'app-re-gestion'},{'name': 'RegistrarContactoComponent', 'selector': 'app-registrar-contacto'},{'name': 'RegistrarProductoComponent', 'selector': 'app-registrar-producto'},{'name': 'RegistrarProveedorComponent', 'selector': 'app-registrar-proveedor'},{'name': 'ReporteComponent', 'selector': 'app-reporte'},{'name': 'SolicitudesGestionComponent', 'selector': 'app-solicitudes-gestion'},{'name': 'SolicitudesNuevasComponent', 'selector': 'app-solicitudes-nuevas'},{'name': 'SubmenuComponent', 'selector': 'app-submenu'},{'name': 'ValidateQrComponent', 'selector': 'app-validate-qr'}];
+    var DIRECTIVES = [{'name': 'NumberOnlyDirective', 'selector': 'input[appNumberOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'HeaderComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HeaderComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

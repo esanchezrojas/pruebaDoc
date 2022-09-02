@@ -1,0 +1,1081 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>wplay-intranet documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">wplay-intranet documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  RegistrarProductoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/proveedores/components/registrar-producto/registrar-producto.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                                <code><a href="../miscellaneous/variables.html#es" target="_self" >MessageService</a></code>
+                            <code>ConfirmationService</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-registrar-producto</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./registrar-producto.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./registrar-producto.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cl1" >cl1</a>
+                            </li>
+                            <li>
+                                <a href="#dato$" >dato$</a>
+                            </li>
+                            <li>
+                                <a href="#loading" >loading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#logged" >logged</a>
+                            </li>
+                            <li>
+                                <a href="#pageNumber" >pageNumber</a>
+                            </li>
+                            <li>
+                                <a href="#ProductoNuevo" >ProductoNuevo</a>
+                            </li>
+                            <li>
+                                <a href="#response" >response</a>
+                            </li>
+                            <li>
+                                <a href="#selectProducto_id" >selectProducto_id</a>
+                            </li>
+                            <li>
+                                <a href="#submittedForm" >submittedForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getProductP" >getProductP</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#SaveInput" >SaveInput</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#idProv" >idProv</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(messageService: <a href="../objects/es.html" target="_self">MessageService</a>, confirmationService: ConfirmationService, authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, proveedoresService: <a href="../injectables/ProveedoresService.html" target="_self">ProveedoresService</a>, store: Store<literal type>, menuService: <a href="../injectables/MenuService.html" target="_self">MenuService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, cd: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>messageService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../miscellaneous/variables.html#es" target="_self" >MessageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>confirmationService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ConfirmationService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>proveedoresService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProveedoresService.html" target="_self" >ProveedoresService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>store</td>
+                                                  
+                                                        <td>
+                                                                    <code>Store&lt;literal type&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>menuService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MenuService.html" target="_self" >MenuService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cd</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="idProv"></a>
+                        <b>idProv</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:41</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProductP"></a>
+                    <span class="name">
+                        <span ><b>getProductP</b></span>
+                        <a href="#getProductP"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getProductP()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:56</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SaveInput"></a>
+                    <span class="name">
+                        <span ><b>SaveInput</b></span>
+                        <a href="#SaveInput"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>SaveInput()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cl1"></a>
+                    <span class="name">
+                        <span ><b>cl1</b></span>
+                        <a href="#cl1"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dato$"></a>
+                    <span class="name">
+                        <span ><b>dato$</b></span>
+                        <a href="#dato$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/State.html" target="_self" >Observable&lt;State&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loading"></a>
+                    <span class="name">
+                        <span ><b>loading</b></span>
+                        <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logged"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>logged</b></span>
+                        <a href="#logged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageNumber"></a>
+                    <span class="name">
+                        <span ><b>pageNumber</b></span>
+                        <a href="#pageNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ProductoNuevo"></a>
+                    <span class="name">
+                        <span ><b>ProductoNuevo</b></span>
+                        <a href="#ProductoNuevo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.fb.group({
+    producto_id: [&#x27;&#x27;, Validators.compose([Validators.required])]
+  })</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="response"></a>
+                    <span class="name">
+                        <span ><b>response</b></span>
+                        <a href="#response"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ResponseModel.html" target="_self" >ResponseModel</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    dataArray: [],
+    msg: &#x27;&#x27;, state: 0
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectProducto_id"></a>
+                    <span class="name">
+                        <span ><b>selectProducto_id</b></span>
+                        <a href="#selectProducto_id"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submittedForm"></a>
+                    <span class="name">
+                        <span ><b>submittedForm</b></span>
+                        <a href="#submittedForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/proveedores/components/registrar-producto/registrar-producto.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {ChangeDetectorRef, Component, OnInit, Input } from &#x27;@angular/core&#x27;;
+import {ConfirmationService, LazyLoadEvent, MessageService, SortEvent} from &#x27;primeng&#x27;;
+import {AuthService} from &#x27;@core/services/auth/auth.service&#x27;;
+import {select, Store} from &#x27;@ngrx/store&#x27;;
+import {State} from &#x27;@core/models/store-model/StoreModel&#x27;;
+import {MenuService} from &#x27;@core/services/menu/menu.service&#x27;;
+import {UtilService} from &#x27;@core/services/util/util.service&#x27;;
+import {Router} from &#x27;@angular/router&#x27;;
+import {FormBuilder, Validators} from &#x27;@angular/forms&#x27;;
+import {Observable} from &#x27;rxjs&#x27;;
+import Swal from &#x27;sweetalert2&#x27;;
+import * as fromRoot from &#x27;../../../rootScopeAction&#x27;;
+import {ResponseModel} from &#x27;@core/models/response-model/ResponseModel&#x27;;
+import {FormGroup, FormControl, FormArray} from &#x27;@angular/forms&#x27;;
+import {stringifyConfiguration} from &#x27;tslint/lib/configuration&#x27;;
+import {ProductoService} from &#x27;@core/services/producto/producto.service&#x27;;
+import {ProveedoresService} from &#x27;@core/services/proveerdores/proveedores.service&#x27;;
+
+@Component({
+  selector: &#x27;app-registrar-producto&#x27;,
+  templateUrl: &#x27;./registrar-producto.component.html&#x27;,
+  styleUrls: [&#x27;./registrar-producto.component.scss&#x27;],
+  providers: [MessageService, ConfirmationService]
+})
+export class RegistrarProductoComponent implements OnInit {
+
+  constructor(private messageService: MessageService,
+              private confirmationService: ConfirmationService,
+              private authService: AuthService,
+              private proveedoresService: ProveedoresService,
+              private store: Store&lt;{ rootScope: State }&gt;,
+              private menuService: MenuService,
+              private utilService: UtilService,
+              private router: Router,
+              private cd: ChangeDetectorRef,
+              private fb: FormBuilder) {
+    this.dato$ &#x3D; store.pipe(select(&#x27;rootScope&#x27;));
+    this.logged &#x3D; JSON.parse(localStorage.getItem(&#x27;logged&#x27;));
+    this.pageNumber &#x3D; 1;
+  }
+  @Input() idProv: number;
+  response: ResponseModel &#x3D; {
+    dataArray: [],
+    msg: &#x27;&#x27;, state: 0
+  };
+  submittedForm &#x3D; false;
+  public logged: Observable&lt;boolean&gt;;
+  dato$: Observable&lt;State&gt;;
+  pageNumber: number;
+  loading: boolean;
+  cl1 &#x3D; &#x27;&#x27;;
+  selectProducto_id &#x3D; [];
+  ProductoNuevo &#x3D; this.fb.group({
+    producto_id: [&#x27;&#x27;, Validators.compose([Validators.required])]
+  });
+  ngOnInit(): void {
+    this.getProductP();
+  }
+
+  SaveInput(): any{
+
+    //console.log(this.ProductoNuevo.value);
+    //console.log(this.idProv);
+
+    //return false;
+
+    /*alert(this.idProvN);
+
+    return false;*/
+
+    this.loading &#x3D; true;
+    this.submittedForm &#x3D; true;
+    if (!this.ProductoNuevo.valid) {
+      return;
+    }
+    this.proveedoresService.saveProducto(this.idProv, this.ProductoNuevo.value).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      this.response &#x3D; data;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        Swal.fire({
+          icon: &#x27;success&#x27;,
+          title: &#x27;Exito&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          window.location.reload();
+        });
+      }
+      else if (data.state &#x3D;&#x3D;&#x3D; 402) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          if (this.logged) {
+            this.authService.logout().subscribe(datalog &#x3D;&gt; {
+              this.response &#x3D; datalog;
+              if (this.response.state &#x3D;&#x3D;&#x3D; 200) {
+                localStorage.removeItem(&#x27;logged&#x27;);
+                this.store.dispatch(new fromRoot.CleanRootScope());
+                window.location.href &#x3D; &#x27;/login&#x27;;
+              } else if (this.response.state &#x3D;&#x3D;&#x3D; 500) {
+                this.router.navigate([&#x27;/error&#x27;]);
+              }
+            }, error &#x3D;&gt; {
+              this.router.navigate([&#x27;/error&#x27;]);
+            });
+          }
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 401) {
+        Swal.fire({
+          icon: &#x27;info&#x27;,
+          title: &#x27;Advertencia&#x27;,
+          timer: 1500,
+          showConfirmButton: false,
+          text: data.msg,
+        }).then(() &#x3D;&gt; {
+          this.router.navigate([&#x27;/home&#x27;]);
+        });
+      } else if (data.state &#x3D;&#x3D;&#x3D; 500) {
+        this.router.navigate([&#x27;/error&#x27;]);
+      } else {
+        this.messageService.add({severity: &#x27;error&#x27;, summary: &#x27;Advertencia&#x27;, detail: data.msg, life: 3000});
+      }
+    }, error &#x3D;&gt; {
+      this.router.navigate([&#x27;/error&#x27;]);
+    });
+  }
+
+  getProductP(): void {
+    this.proveedoresService.getProducto(this.idProv).subscribe(data &#x3D;&gt; {
+      this.loading &#x3D; false;
+      if (data.state &#x3D;&#x3D;&#x3D; 200) {
+        this.selectProducto_id &#x3D; data.dataArray;
+      }
+    });
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;p-tabview&quot;&gt;
+  &lt;div class&#x3D;&quot;p-tabview-panels&quot;&gt;
+    &lt;div class&#x3D;&quot;card mbutton&quot;&gt;
+
+      &lt;div class&#x3D;&quot;card-header bg-primary&quot;&gt;
+        &lt;form [formGroup]&#x3D;&quot;ProductoNuevo&quot; (ngSubmit)&#x3D;&quot;SaveInput()&quot;&gt;
+          &lt;h3&gt;Ingresa la información&lt;/h3&gt;
+          &lt;div class&#x3D;&quot;row groupInput&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-8&quot;&gt;
+              &lt;div class&#x3D;&quot;inputGNew&quot; [ngClass]&#x3D;&quot;{&#x27;has-error&#x27;: submittedForm &amp;&amp; (ProductoNuevo.controls.producto_id.errors)}&quot;&gt;
+                &lt;label for&#x3D;&quot;producto_id&quot;&gt;Producto&lt;b *ngIf&#x3D;&quot;ProductoNuevo.controls[&#x27;producto_id&#x27;].hasError(&#x27;required&#x27;)&quot;&gt;*&lt;/b&gt;&lt;/label&gt;
+                &lt;select id&#x3D;&quot;producto_id&quot; [(ngModel)]&#x3D;&quot;cl1&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;producto_id&quot;&gt;
+                  &lt;option value&#x3D;&quot;&quot;&gt;Seleccione...&lt;/option&gt;
+                  &lt;option *ngFor&#x3D;&quot;let state of selectProducto_id&quot; [value]&#x3D;&quot;state.producto_id&quot;&gt;
+                    {{ state.descripcion }}
+                  &lt;/option&gt;
+                &lt;/select&gt;
+                &lt;div class&#x3D;&quot;inputError&quot; *ngIf&#x3D;&quot;submittedForm &amp;&amp; (ProductoNuevo.controls.producto_id.errors)&quot;&gt;
+                  &lt;div *ngIf&#x3D;&quot;ProductoNuevo.controls[&#x27;producto_id&#x27;].hasError(&#x27;required&#x27;)&quot;&gt;
+                    &lt;span class&#x3D;&quot;iconErrorInput&quot;&gt;&lt;b&gt;!&lt;/b&gt;&lt;/span&gt;
+                    &lt;span class&#x3D;&quot;text-danger&quot;&gt; Este campo es obligatorio &lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-3 justify-content-md-center&quot;&gt;
+              &lt;button [disabled]&#x3D;&quot;ProductoNuevo.invalid&quot; pButton label&#x3D;&quot;Asignar&quot; icon&#x3D;&quot;pi pi-check&quot; class&#x3D;&quot;p-button-text botonNew&quot; type&#x3D;&quot;submit&quot;&gt;&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./registrar-producto.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="p-tabview">  <div class="p-tabview-panels">    <div class="card mbutton">      <div class="card-header bg-primary">        <form [formGroup]="ProductoNuevo" (ngSubmit)="SaveInput()">          <h3>Ingresa la información</h3>          <div class="row groupInput">            <div class="col-md-8">              <div class="inputGNew" [ngClass]="{\'has-error\': submittedForm && (ProductoNuevo.controls.producto_id.errors)}">                <label for="producto_id">Producto<b *ngIf="ProductoNuevo.controls[\'producto_id\'].hasError(\'required\')">*</b></label>                <select id="producto_id" [(ngModel)]="cl1" class="form-control" formControlName="producto_id">                  <option value="">Seleccione...</option>                  <option *ngFor="let state of selectProducto_id" [value]="state.producto_id">                    {{ state.descripcion }}                  </option>                </select>                <div class="inputError" *ngIf="submittedForm && (ProductoNuevo.controls.producto_id.errors)">                  <div *ngIf="ProductoNuevo.controls[\'producto_id\'].hasError(\'required\')">                    <span class="iconErrorInput"><b>!</b></span>                    <span class="text-danger"> Este campo es obligatorio </span>                  </div>                </div>              </div>            </div>            <div class="col-md-3 justify-content-md-center">              <button [disabled]="ProductoNuevo.invalid" pButton label="Asignar" icon="pi pi-check" class="p-button-text botonNew" type="submit"></button>            </div>          </div>        </form>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'ActivoListaComponent', 'selector': 'app-activo-lista'},{'name': 'AgregarComponent', 'selector': 'app-agregar'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsignarActivosComponent', 'selector': 'app-asignar-activos'},{'name': 'CaptchaComponent', 'selector': 'app-captcha'},{'name': 'CargInventarioComponent', 'selector': 'app-carg-inventario'},{'name': 'ChartRechargeComponent', 'selector': 'app-chart-recharge'},{'name': 'ChartWhitdrawComponent', 'selector': 'app-chart-whitdraw'},{'name': 'ClasificadorComponent', 'selector': 'app-clasificador'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'ContainerComponent', 'selector': 'app-container'},{'name': 'CrearClasificadorComponent', 'selector': 'app-crear-clasificador'},{'name': 'CrearProductosComponent', 'selector': 'app-crear-productos'},{'name': 'EditarContactoComponent', 'selector': 'app-editar-contacto'},{'name': 'EjemploComponent', 'selector': 'app-ejemplo'},{'name': 'EmpleadoActualizarInicioComponent', 'selector': 'app-empleado-actualizar-inicio'},{'name': 'EmpleadoEstudiosComponent', 'selector': 'app-empleado-estudios'},{'name': 'EmpleadoHijosComponent', 'selector': 'app-empleado-hijos'},{'name': 'EmpleadoListaComponent', 'selector': 'app-empleado-lista'},{'name': 'EmpleadoMascotasComponent', 'selector': 'app-empleado-mascotas'},{'name': 'EmpleadoNuevoComponent', 'selector': 'app-empleado-nuevo'},{'name': 'EmpleadoNuevoCortoComponent', 'selector': 'app-empleado-nuevo-corto'},{'name': 'EmpleadoPendienteAplicarComponent', 'selector': 'app-empleado-pendiente-aplicar'},{'name': 'EmpleadoVehiculoComponent', 'selector': 'app-empleado-vehiculo'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'FavoritesComponent', 'selector': 'app-favorites'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'GestionComponent', 'selector': 'app-gestion'},{'name': 'GestionJefeComponent', 'selector': 'app-gestion-jefe'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HojaDeVidaComponent', 'selector': 'app-hoja-de-vida'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HvComponent', 'selector': 'app-hv'},{'name': 'IndicatorsComponent', 'selector': 'app-indicators'},{'name': 'LayoutComponent', 'selector': 'app-layout'},{'name': 'ListarProductosComponent', 'selector': 'app-listar-productos'},{'name': 'ListarProveedorComponent', 'selector': 'app-listar-proveedor'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'MenuPerfilComponent', 'selector': 'app-menu-perfil'},{'name': 'MiembrosComponent', 'selector': 'app-miembros'},{'name': 'MisDatosComponent', 'selector': 'app-mis-datos'},{'name': 'NavegacionComponent', 'selector': 'app-navegacion'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PerfilComponent', 'selector': 'app-perfil'},{'name': 'PerfilesComponent', 'selector': 'app-perfiles'},{'name': 'PublicacionesComponent', 'selector': 'app-publicaciones'},{'name': 'ReAgregarComponent', 'selector': 'app-re-agregar'},{'name': 'RecuperaClaveComponent', 'selector': 'app-recupera-clave'},{'name': 'ReGestionComponent', 'selector': 'app-re-gestion'},{'name': 'RegistrarContactoComponent', 'selector': 'app-registrar-contacto'},{'name': 'RegistrarProductoComponent', 'selector': 'app-registrar-producto'},{'name': 'RegistrarProveedorComponent', 'selector': 'app-registrar-proveedor'},{'name': 'ReporteComponent', 'selector': 'app-reporte'},{'name': 'SolicitudesGestionComponent', 'selector': 'app-solicitudes-gestion'},{'name': 'SolicitudesNuevasComponent', 'selector': 'app-solicitudes-nuevas'},{'name': 'SubmenuComponent', 'selector': 'app-submenu'},{'name': 'ValidateQrComponent', 'selector': 'app-validate-qr'}];
+    var DIRECTIVES = [{'name': 'NumberOnlyDirective', 'selector': 'input[appNumberOnly]'}];
+    var ACTUAL_COMPONENT = {'name': 'RegistrarProductoComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RegistrarProductoComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
